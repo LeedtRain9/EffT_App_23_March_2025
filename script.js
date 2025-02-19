@@ -94,9 +94,9 @@ const questions = {
 
 { question: "Ab welcher Stromhöhe im DC-Bereich gilt Lebensgefahr ?", answers: ["120 mA", "0,12 A", "102 mA", "0,012 A"], correct: [0, 1] },
 
-{ question: "Welche Stromhöhe im DC-Bereich gilt als tödlich ?", answers: ["120 mA", "0,12 A", "102 mA", "0,012 A"], correct: [1, 2] },
+{ question: "Welche Stromhöhe im DC-Bereich gilt als tödlich ?", answers: ["500 mA", "0,12 A", "102 mA", "0,5 A"], correct: [0, 3] },
 
-{ question: "Welche Stromhöhe im AC-Bereich gilt als tödlich ?", answers: ["500 mA", "0,5 A", "0,3 A", "0,03 A"], correct: 2 },
+{ question: "Welche Stromhöhe im AC-Bereich gilt als tödlich ?", answers: ["500 mA", "0,5 A", "0,3 A", "0,03 A"], correct: [0, 1] },
 
 { question: "Ab welcher Spannungshöhe im AC-Bereich gilt Lebensgefahr ?", answers: ["50 V", "0,5 V", "500 mV", "50 mV"], correct: 0 },
 
