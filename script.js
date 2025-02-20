@@ -17,7 +17,7 @@ const questions = {
         { question: "Welchen Formelbuchstaben hat die elektrische Leistung im Gleichstromkreis ?", answers: ["P", "C", "L", "W"], correct: 0 },
         { question: "Mit welchen Formeln lässt sich die Leistung berechnen ?", answers: ["P = U * I", "P = R / I", "U = R * I", "I = U / R"], correct: [0] },
         { question: "Wie bezeichnet man die Leistung P im Gleichstromkreis ?", answers: ["Widerstandsleistung", "Momentanleistung", "Gleichstromleistung", "Spitzenleistung"], correct: 2 },
-        { question: "Welchen Formelbuchstaben hat die elektrische Arbeit ?", answers: ["Nm", "Ws", "W", "F"], correct: 1 },
+        { question: "Welchen Formelbuchstaben hat die elektrische Arbeit ?", answers: ["Nm", "Ws", "W", "F"], correct: 2 },
         { question: "Welche Einheit hat die elektrische Spannung ?", answers: ["I", "U", "Ws", "V"], correct: 3 },
         { question: "Welche Einheit hat der elektrische Strom ?", answers: ["A", "U", "W", "I"], correct: 0 },
         { question: "Wieviel Ampere entsprechen 500 mA ?", answers: ["5", "0,5", "0,05", "50"], correct: 1 },
@@ -132,7 +132,7 @@ const questions = {
 
 { question: "Spätestens wann muss eine Schutzeinrichtung im TN-S-Netz bei 230 V abschalten ?", answers: ["innerhalb von 400 ms", "innerhalb von 0,4 s", "nach von 30 ms", "innerhalb von 0,2s"], correct: [0, 1] },
 
-{ question: "Spätestens wann muss eine Schutzeinrichtung im TT-Netz bei 230 V abschalten ?", answers: ["innerhalb von 0,2 s", "nach 200 ms", "spätestens nach 0,02 s", "nach 0,2 s"], correct: [0, 3] },
+{ question: "Spätestens wann muss eine Schutzeinrichtung im TT-Netz bei 230 V abschalten ?", answers: ["innerhalb von 0,2 s", "nach 200 ms", "spätestens nach 0,02 s", "nach 0,2 s"], correct: 0 },
 
             {
                 question: "Ein Wechselstrom von 5 mA durch den menschlichen Körper ist tödlich.",
@@ -1353,7 +1353,7 @@ const questions = {
         { question: "Spätestens wann muss eine Schutzeinrichtung im TN-S-Netz bei 230 V abschalten ?", answers: ["innerhalb von 400 ms", "innerhalb von 0,4 s", "nach von 30 ms", "innerhalb von 0,2s"], correct: [0, 1] },
 
 
-        { question: "Spätestens wann muss eine Schutzeinrichtung im TT-Netz bei 230 V abschalten ?", answers: ["innerhalb von 0,2 s", "nach 200 ms", "spätestens nach 0,02 s", "nach 0,2 s"], correct: [0, 3] },
+        { question: "Spätestens wann muss eine Schutzeinrichtung im TT-Netz bei 230 V abschalten ?", answers: ["innerhalb von 0,2 s", "nach 200 ms", "spätestens nach 0,02 s", "innerhalb von 0,2 s"], correct: [0, 3] },
 
 
         { question: "Wie groß darf der maximale Differenzfehlerstrom für Personenschutz höchstens sein ?", answers: ["0,3 mA", "0,03 A", "300 mA", "30 mA"], correct: [1, 3] },
