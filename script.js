@@ -2,90 +2,166 @@ const questions = {
 
     Elektrotechnik: [
         { question: "Wie ist das Elektron geladen ?", answers: ["positiv", "gar nicht", "neutral", "negativ"], correct: 3 },
-        { question: "Welche Ladungen sind für den Stromfluss in einem metallischen Leiter verantwortlich ?", answers: ["Neutronen", "Elektronen", "Protonen", "Positronen"], correct: 1 }, 
+
+        { question: "Welche Ladungen sind für den Stromfluss in einem metallischen Leiter verantwortlich ?", answers: ["Neutronen", "Elektronen", "Protonen", "Positronen"], correct: 1 },
+ 
         { question: "Welche Aussage verdeutlicht den elektrischem Strom sinngemäß ?", answers: ["Eine Flüssigkeit im Leiter", "Eine Kraft im Leiter", "Eine gerichtete Bewegung von Ladungsträgern", "Eine Bremswirkung der Ladungsträger"], correct: 2 },
+
         { question: "Was ist die treibende Kraft in einem Stromkreis ?", answers: ["Die Leistung P", "Die Ladung Q", "Der Widerstand R", "Die Spannung U"], correct: 3 },
+
         { question: "Welche Aussagen sind richtig ?", answers: ["Eine Spannung liegt an einem Widerstand an", "Ein Strom liegt an einem Widerstand an", "Ein Strom ließt an einem Widerstand an", "Ein Strom fließt durch einen Widerstand durch"], correct: [0, 3] },
-        { question: "Aus welchen drei grundlegenden Elementen besteht ein Stromkreis ?", answers: ["Spannungsquelle", "Leiter", "Leuchte", "Verbraucher"], correct: [0, 1, 3] },  
+
+        { question: "Aus welchen drei grundlegenden Elementen besteht ein Stromkreis ?", answers: ["Spannungsquelle", "Leiter", "Leuchte", "Verbraucher"], correct: [0, 1, 3] },
+  
         { question: "Für welche Spannungsart gilt die Abkürzung AC ?", answers: ["Wechselspannung", "Dreieckspannung", "Gleichspannung", "Rechteckspannung"], correct: 0 },
+
         { question: "Für welche Spannungsart gilt die Abkürzung DC ?", answers: ["Wechselspannung", "Dreieckspannung", "Gleichspannung", "Rechteckspannung"], correct: 2 },
+
         { question: "Welchen Formelbuchstaben hat der elektrische Strom ?", answers: ["R", "U", "A", "I"], correct: 3 },
+
         { question: "Welchen Formelbuchstaben hat die elektrische Spannung ?", answers: ["I", "U", "Ws", "Nm"], correct: 1 },
+
         { question: "Welchen Formelbuchstaben hat der elektrische Widerstand ?", answers: ["P", "A", "R", "VA"], correct: 2 },
+
         { question: "Wie bezeichnet man den Widerstand R im Gleichstromkreis ?", answers: ["Gleichstromwiderstand", "Blindwiderstand", "Kaltwiderstand", "Heißwiderstand"], correct: 0 },
+
         { question: "Wie nennt man den Widerstand R im Wechselstromkreis ?", answers: ["Scheinwiderstand", "Blindwiderstand", "Wirkwiderstand", "Hellwiderstand"], correct: 2 },
+
         { question: "Welchen Formelbuchstaben hat die elektrische Leistung im Gleichstromkreis ?", answers: ["P", "C", "L", "W"], correct: 0 },
-        { question: "Mit welchen Formeln lässt sich die Leistung berechnen ?", answers: ["P = U * I", "P = R / I", "U = R * I", "I = U / R"], correct: [0] },
+
+        { question: "Mit welchen Formeln lässt sich die Leistung berechnen ?", answers: ["P = U * I", "P = R / I", "U = R * I", "I = U / R"], correct: 0 },
+
         { question: "Wie bezeichnet man die Leistung P im Gleichstromkreis ?", answers: ["Widerstandsleistung", "Momentanleistung", "Gleichstromleistung", "Spitzenleistung"], correct: 2 },
+
         { question: "Welchen Formelbuchstaben hat die elektrische Arbeit ?", answers: ["Nm", "Ws", "W", "F"], correct: 2 },
+
+
         { question: "Welche Einheit hat die elektrische Spannung ?", answers: ["I", "U", "Ws", "V"], correct: 3 },
+
+
         { question: "Welche Einheit hat der elektrische Strom ?", answers: ["A", "U", "W", "I"], correct: 0 },
+
+
         { question: "Wieviel Ampere entsprechen 500 mA ?", answers: ["5", "0,5", "0,05", "50"], correct: 1 },
+
+
         { question: "Welche Einheit hat der elektrische Widerstand R ?", answers: ["W", "VA", "J", "Ohm"], correct: 3 },
+
         { question: "Ein Widerstand hat den Wert 1 kOhm. Wie viel Ohm sind das ?", answers: ["0,001", "100", "1000", "0,1"], correct: 2 },
+
         { question: "Welche Formeln geben das Ohmsche Gesetz wieder ?", answers: ["R = I / U", "U = R / I", "U = R * I", "I = U / R"], correct: [2, 3] },
+
         { question: "Ein Widerstand von 100 Ohm liegt an 60 V. Wie groß ist der Strom ?", answers: ["6,0 A", "0,6 A", "600 mA", "6 mA"], correct: [1, 2] },
-        { question: "Duch einen Widerstand von 150 Ohm fließen 70 mA. Wie groß ist die angelegte Spannung ?", answers: ["1,5 V", "100,5 V", "10,5 V", "10500 mV"], correct: [2, 3] },
+
+        { question: "Durch einen Widerstand von 150 Ohm fließen 70 mA. Wie groß ist die angelegte Spannung ?", answers: ["1,5 V", "100,5 V", "10,5 V", "10500 mV"], correct: [2, 3] },
+
         { question: "Wie groß ist R bei 230 V und 5,75 A ?", answers: ["4 Ohm", "40 mOhm", "4 kOhm", "40 Ohm"], correct: 3 },
-        { question: "Welche Einheit hat die elektrische Leistung P ?", answers: ["W", "A", "Nm", "J"], correct: 0 },
+
         { question: "Wie nennt man das Verhältnis zwischen mechanischer zur elektrischen Leistung ?", answers: ["Wirkungsgrad", "Wirtschaftsgrad", "Windungsgrad", "Wellengrad"], correct: 0 },
+
         { question: "Welche zwei Widerstandsarten gibt es neben dem Wirkwiderstand im Wechselstromkreis noch ?", answers: ["Warmwiderstand", "Blindwiderstand", "Scheinwiderstand", "Reibwiderstand"], correct: [1, 2] },
+
         { question: "Welche zwei Leistungsarten gibt es neben der Wirkleistung im Wechselstromkreis noch ?", answers: ["Blindleistung", "Nulleistung", "Scheinleistung", "Kaltleistung"], correct: [0, 2] },
+
         { question: "Welche zwei Bauteile verursachen eine Verschiebung zwischen Strom und Spannung im Wechselstromkreis ?", answers: ["Widerstand R", "Kondensator C", "Potentiometer R", "Spule L"], correct: [1, 3] },
+
         { question: "Wie wird eine Spule/Wicklung allgemein noch bezeichnet ?", answers: ["Kapazität C", "Ladung Q", "Induktivität L", "Permitivität µ"], correct: 2 },
-        { question: "Wie wird ein Kondensator/Ladungsspeicher allgemein noch bezeichnet ?", answers: ["Kapazität C", "Ladung Q", "Induktivität L", "Permitivität µ"], correct: 0 },
+
+        { question: "Wie wird ein Kondensator/Ladungsspeicher allgemein noch bezeichnet ?", answers: ["Kapazität C", "Ladung Q", "Induktivität L", "Permittivität µ"], correct: 0 },
+
         { question: "In welcher Einheit wird die Kapazität C angegeben ?", answers: ["H", "Vs", "F", "As"], correct: 2 },
+
         { question: "In welcher Einheit wird die Induktivität L angegeben ?", answers: ["H", "Vs", "F", "As"], correct: 0 },
+
         { question: "Wie muß ein Strommessgerät im Stromkreis eingebaut werden ?", answers: ["In Reihe zum Messobjekt", "Parallel zum Messobjekt", "Egal", "Sowohl in Reihe, als auch parallel zum Messobjekt"], correct: 0 },
+
         { question: "Wie muß ein Spannungsmessgerät im Stromkreis eingebaut werden ?", answers: ["In Reihe zum Messobjekt", "Parallel zum Messobjekt", "Egal", "Sowohl in Reihe, als auch parallel zum Messobjekt"], correct: 1 },
+
         { question: "Wie können Widerstände/Verbraucher verschaltet werden ?", answers: ["In Reihenschaltung", "In Parallelschaltung", "In Kombination einer Reihen- und Parallelschaltung", "Nur in Reihen- oder Parallelschaltung"], correct: [0, 1, 2] },
         { question: "Wie wird die Reihenschaltung noch bezeichnet ?", answers: ["Stromteiler", "Spannungsteiler", "Stromreduzierschaltung", "Spannungsreduzierschaltung"], correct: 1 },
+
         { question: "Welche Größe ist die gemeinsame Größe in einer Reihenschaltung ?", answers: ["Arbeit W", "Spannung U", "Leistung P", "Strom I"], correct: 3 },
+
         { question: "Was passiert, wenn mehrere Widerstände in Reihe geschaltet werden ?", answers: ["Der Gesamtwiderstand sinkt", "Bei konstanter Spannung U sinkt der Strom", "Der Gesamtwiderstand ändert sich nicht", "Bei konstanter Spannung steigt der Strom"], correct: 1 },
+
         { question: "Welche Größe ist die gemeinsame Größe in einer Parallelschaltung ?", answers: ["Spannung U", "Strom I", "Arbeit W", "Leistung P"], correct: 0 },
+
         { question: "Wie wird die Parallelschaltung noch bezeichnet ?", answers: ["Spannungsreduzierschaltung", "Spannungsteiler", "Stromreduzierschaltung", "Stromteiler"], correct: 3 },
+
         { question: "Was passiert, wenn mehrere Widerstände parallel geschaltet werden ?", answers: ["Der Gesamtwiderstand R steigt", "Bei konstanter Spannung U sinkt der Strom I", "Der Gesamtwiderstand ändert sich nicht", "Bei konstanter Spannung U steigt der Strom I"], correct: 3 },
+
         { question: "Welche Aussage ist richtig ?", answers: ["In einer Reihenschaltung ist der Gesamtwiderstand stets kleiner, als der größte Teilwiderstand", "In einer Reihenschaltung fließt durch den kleinsten Teilwiderstand der größte Teilstrom", "In einer Reihenschaltung ist der Gesamtwiderstand stets größer, als der größte Teilwiderstand", "Durch alle Teilwiderstände fließt der gleiche Strom I"], correct: [2, 3] },
-        { question: "Welche Aussage ist richtig ?", answers: ["In einer Parallelschaltung steigt der Gesamtwiderstand mit steigender Anzahl an Teilwiderständen", "In einer Parallelschaltung sinkt der Gesamtwiderstand mit kleiner werdenden Anzahl an Teilwiderständen", "In einer Parallelschaltung sinkt der Gesamtwiderstand mit steigender Anzahl an Teilwiderständen", "In einer Parallelschaltung steigt  der Gesamtwiderstand mit kleiner werdenden Anzahl an Teilwiderständen"], correct: 2 },
+
+        { question: "Welche Aussage ist richtig ?", answers: ["In einer Parallelschaltung steigt der Gesamtwiderstand mit steigender Anzahl an Teilwiderständen", "In einer Parallelschaltung sinkt der Gesamtwiderstand mit kleiner werdenden Anzahl an Teilwiderständen", "In einer Parallelschaltung sinkt der Gesamtwiderstand mit steigender Anzahl an Teilwiderständen", "In einer Parallelschaltung steigt der Gesamtwiderstand mit kleiner werdenden Anzahl an Teilwiderständen"], correct: [2, 3] },
+
         { question: "Welche Aussage ist falsch ?", answers: ["In einer Parallelschaltung ist der Gesamtwiderstand stets kleiner, als der kleinste Teilwiderstand", "In einer Parallelschaltung fließt durch den größten Teilwiderstand der kleinste Teilstrom", "In einer Parallelschaltung ist der Gesamtwiderstand stets größer, als der kleinste Teilwiderstand", "Alle Teilwiderstände liegen an der  selben Gesamtspannung U"], correct: 2 },
+
         { question: "Steigt der Widerstandswert eines Leiters, wenn der Querschnitt größer gewählt wird ?", answers: ["Nein, der  Leiterwiderstand wird kleiner", "Ja, der Widerstandswert wird größer", "Wenn der Querschnitt sich nur um eine Stufe vergrößert, ändert sich der Wert nicht", "Wenn der Querschnitt sich nur um eine Stufe verringert, ändert sich der Wert nicht"], correct: 0 },
-        { question: "Was passiert mit dem Leiterwiderstand, wenn die Umgebungstemperatur steigt ?", answers: ["Die Umgebungstemperatur hat keinen Einfluss auf den Leiterwiderstand", "Der Leiterwiderstand wird größer", "Die Umgebungstemperatur hat einen Einfluss auf den Leiterwiderstand", "Der Leiterwiderstand wird kleiner"], correct: [2, 1] },
+
+        { question: "Was passiert mit dem Leiterwiderstand, wenn die Umgebungstemperatur steigt ?", answers: ["Die Umgebungstemperatur hat keinen Einfluss auf den Leiterwiderstand", "Der Leiterwiderstand wird größer", "Die Umgebungstemperatur hat einen Einfluss auf den Leiterwiderstand", "Der Leiterwiderstand wird kleiner"], correct: [1, 2] },
+
         { question: "Welches Material leitet den Strom am besten ?", answers: ["Aluminium", "Silber", "Kupfer", "Gold"], correct: 1 },
-        { question: "Welche Gefahr besteht bei fehlerhaften Verbindungen ?", answers: ["Der Übergangswiderstand als auch die Temperatur sinken - Brandgefahr!", "Der Übergangswiderstand sinkt und die Temperatur steigt - Brandgefahr!", "Der Übergangswiderstand steigt  und die Temperatur sinkt - Brandgefahr!", "Der Übergangswiderstand als auch die Temperatur steigt - Brandgefahr!"], correct: 3 },
+        { question: "Welche Gefahr besteht bei fehlerhaften Verbindungen ?", answers: ["Der Übergangswiderstand als auch die Temperatur sinken - Brandgefahr!", "Der Übergangswiderstand sinkt und die Temperatur steigt - Brandgefahr!", "Der Übergangswiderstand steigt und die Temperatur sinkt - Brandgefahr!", "Der Übergangswiderstand als auch die Temperatur steigen - Brandgefahr!"], correct: 3 },
         { question: "Welche Aussage ist richtig?", answers: ["Der Innenwiderstand eines Multimeters ist im V-Bereich kleiner, als im A-Bereich.", "Der Innenwiderstand eines Multimeters ist im V- und A-Bereich unterschiedlich.", "Der Innenwiderstand eines Multimeters ist im V-Bereich größer, als im A-Bereich.", "Der Innenwiderstand eines Multimeters ist im V- und A-Bereich gleich."], correct: [1, 2] },
         { question: "Wie groß ist der Unterschied zwischen Spitzen- und Effektivwert einer sinusförmigen Wechselspannung ?", answers: ["√3", "√2", "√4", "√5"], correct: 1 },
-        { question: "Welche Geräte werden verwendet, um Spannungen zu messen ?", answers: ["Voltmeter", "Strommesser", "Amperemeter", "Spannungsmesser"], correct: 0 },
+
+        { question: "Welche Geräte werden verwendet, um Spannungen zu messen ?", answers: ["Voltmeter", "Strommesser", "Amperemeter", "Spannungsmesser"], correct: [0, 1] },
+
         { question: "Welche der folgenden Komponenten können als Gleichspannungsquelle dienen ?", answers: ["Batterie", "Solarmodul", "Wechselrichter", "Transformator"], correct: [0, 1] },
-        { question: "Welche Eigenschaften beschreiben eine Gleichspannung ?", answers: ["Konstante Polarität", "Variable Frequenz", "Gleichbleibende Höhe", "Wechselnde Stromrichtung"], correct: [0, 2] },
+
+        { question: "Welche Eigenschaften beschreiben eine Gleichspannung ?", answers: ["Gleichbleibende Polarität", "Variable Frequenz", "Konstante Höhe", "Wechselnde Stromrichtung"], correct: [0, 2] },
+
         { question: "Der Spannungsteiler kann verwendet werden, um eine geringere Spannung aus einer höheren Spannung zur Verfügung zu stellen.", answers: ["Richtig", "Falsch"], correct: 0 },
-        { question: "Was ändert sich periodisch bei einer Wechselspannung ?", answers: ["Amplitude", "Phase", "Frequenz", "Polarität"], correct: 3 },
+
+        { question: "Was ändert sich periodisch bei einer Wechselspannung ?", answers: ["Amplitude", "Phase", "Frequenz", "Polarität"], correct: [0, 3] },
+
         { question: "Welche Einheit gilt für die Frequenz f z.B. bei Wechselspannungen ?", answers: ["Hertz", "Volt", "Ampere", "Ohm"], correct: 0 },
-        { question: "Welche Eigenschaften beschreiben Wechselspannungen ?", answers: ["Konstante Polarität", "Periodische Polaritätsänderung", "Konstante Amplitude", "Feste Phase"], correct: [1, 2] },
-        { question: "Welche Aussagen treffen auf einen Wechselstromgenerator zu ?", answers: ["Wandelt mechanische Energie in elektrische Energie um", "Hat eine feste Frequenz", "Erzeugt Wechselspannung", "Erzeugt Gleichspannung"], correct: [0, 2] },
+
+        { question: "Welche Aussagen treffen auf einen Wechselstromgenerator zu ?", answers: ["Wandelt mechanische in elektrische Energie um", "Wandelt elektrische in mechanische Energie um", "Erzeugt Wechselspannung", "Erzeugt Gleichspannung"], correct: [0, 2] },
+
         { question: "Wie viele Phasen hat ein typisches Drehstromsystem?", answers: ["Eine", "Zwei", "Drei", "Vier"], correct: 2 },
-        { question: "Welche maximalen Spannungswerte gelten für Niederspannung im AC-Bereich ?", answers: ["230 V", "400 V", "600 V", "1000 V"], correct: 3 },
-        { question: "Welche Spannungen werden im Drehstromsystemen typischerweise im Niederspannungsbereich verwendet?", answers: ["230 V", "400 V", "600 V", "1000 V"], correct: 1 },
-        { question: "Welche maximalen Spannungswerte gelten für Niederspannung im DC-Bereich ?", answers: ["800 V", "400 V", "600 V", "1,5 kV"], correct: 3 },
+
+        { question: "Welcher maximale Spannungswert gilt für Niederspannung im AC-Bereich ?", answers: ["230 V", "400 V", "600 V", "1000 V"], correct: 3 },
+
+        { question: "Welche Spannungswerte werden in einem Drehstromsystemen typischerweise im Niederspannungsbereich verwendet?", answers: ["230 V", "400 V", "600 V", "1000 V"], correct: [0, 1] },
+
+        { question: "Welcher maximale Spannungswert gilt für Niederspannung im DC-Bereich ?", answers: ["800 V", "400 V", "600 V", "1,5 kV"], correct: 3 },
+
         { question: "Drehstrom wird zur Versorgung von leistungsstarken Maschinen verwendet.", answers: ["Richtig", "Falsch"], correct: 0 },
+
         { question: "Eine weitere Bezeichnung von Drehstrom ist umgangssprachlich Kraftstrom.", answers: ["Richtig", "Falsch"], correct: 0 },
-        { question: "Welche Symbole deuten normalerweise auf ein Drehstromsystem hin ?", answers: ["3~", "Δ und Y", "||", "="], correct: [0, 1] },
+
+        { question: "Welche Symbole deuten auf ein Drehstromsystem hin ?", answers: ["3~", "Δ und Y", "||", "="], correct: [0, 1] },
+
         { question: "Welche Größen sind im Ohmschen Gesetz enthalten ?", answers: ["Spannung", "Stromstärke", "Widerstand", "Leistung"], correct: [0, 1, 2] },
+
         { question: "Was passiert mit dem Strom, wenn die Spannung bei konstantem Widerstand verdoppelt wird ?", answers: ["Er verdoppelt sich", "Er halbiert sich", "Er bleibt gleich", "Er verringert sich auf ein Viertel"], correct: 0 },
+
         { question: "Was beschreibt der Widerstand in einem elektrischen Stromkreis ?", answers: ["Die Hemmung des Stromflusses", "Die Erhöhung der Spannung", "Die Erhöhung des Stroms", "Die Reduktion der Spannung"], correct: 0 },
-        { question: "Welche Formel beschreibt die elektrische Leistung im Gleichstromkreis ?", answers: ["P = I * U", "P = U / I", "P = I² * R", "P = U² / R"], correct: [0, 2, 3] },
+
+        { question: "Welche Formeln beschreiben die elektrische Leistung im Gleichstromkreis ?", answers: ["P = I * U", "P = U / I", "P = I² * R", "P = U² / R"], correct: [0, 2, 3] },
+
         { question: "Was passiert mit der Leistung, wenn die Spannung bei konstantem Strom verdoppelt wird?", answers: ["Sie verdoppelt sich", "Sie halbiert sich", "Sie bleibt gleich", "Sie vervierfacht sich"], correct: 0 },
-        { question: "Welche Auswirkungen hat eine Erhöhung des Widerstands bei konstanter Spannung auf die Leistung ?", answers: ["Die Leistung erhöht sich", "Die Leistung verringert sich", "Die Leistung bleibt gleich", "Die Leistung sinkt auf null"], correct: 1 },
+
+        { question: "Welche Auswirkung hat eine Erhöhung des Widerstandes bei konstanter Spannung auf die Leistung ?", answers: ["Die Leistung erhöht sich", "Die Leistung verringert sich", "Die Leistung bleibt gleich", "Die Leistung sinkt auf null"], correct: 1 },
+
         { question: "Was passiert in einer Reihenschaltung, wenn ein Widerstand unterbrochen wird ?", answers: ["Der gesamte Stromkreis wird unterbrochen", "Der Stromkreis bleibt geschlossen", "Der Strom erhöht sich", "Der Widerstand reduziert sich"], correct: 0 },
+
         { question: "Was passiert in einer Parallelschaltung, wenn ein Widerstand unterbrochen wird ?", answers: ["Der gesamte Stromkreis wird unterbrochen", "Die anderen Stromkreise laufen weiter", "Der Gesamtstrom des Netzwerkes erhöht sich", "Der Widerstand reduziert sich"], correct: 1 },
+
         { question: "Welche Zehnerpotenz entspricht dem Präfix \"Milli\"?", answers: ["10^-3", "10^-6", "10^3", "10^6"], correct: 0 },
         { question: "Welche Zehnerpotenz entspricht dem Präfix \"Kilo\"?", answers: ["10^3", "10^6", "10^-3", "10^-6"], correct: 0 },
+
         { question: "Wähle die korrekte Umrechnung für 5000 Ω:", answers: ["5 kΩ", "0,5 kΩ", "50 kΩ", "0,005 MΩ"], correct: [0, 3] },
-        { question: "Welche der folgenden sind korrekt umgerechnet ?", answers: ["2 kΩ = 2000 Ω", "3 MΩ = 3000 kΩ", "4 kΩ = 4.000.000 mΩ", "0,5 MΩ = 500 kΩ"], correct: [0, 1, 3] },
+
+        { question: "Welche der folgenden Werte sind korrekt umgerechnet ?", answers: ["2 kΩ = 2000 Ω", "3 MΩ = 3000 kΩ", "4 kΩ = 4.000.000 mΩ", "0,5 MΩ = 500 kΩ"], correct: [0, 1, 3] },
+
         { question: "0,02 kΩ sind dasselbe wie 20 Ω.", answers: ["Richtig", "Falsch"], correct: 0 },
+
         { question: "Wie werden mehrere Steckdosen eines Stromkreises in Haushalten in der Regel verschaltet ?", answers: ["In Reihenschaltung", "In Parallelschaltung", "In Serienschaltung", "In Einzelschaltung"], correct: 1 },
-        { question: "In einer Reihenschaltung führt der Ausfall eines Geräts zum Ausfall aller anderen Geräte in der Schaltung.", answers: ["Richtig", "Falsch"], correct: 0 },
-        { question: "Welche Schaltungsart verbindet den Hausanschlusskasten mit dem Zählerplatz in einem Mehrfamilienhaus ?", answers: ["Reihenschaltung", "Parallelschaltung", "Kombination aus Reihen- und Parallelschaltung", "Keine der genannten"], correct: 2 },
-        { question: "Warum ist eine Kombination aus Reihen- und Parallelschaltung im Hausanschlusskasten und Zählerplatz notwendig ?", answers: ["Um eine zuverlässige Stromversorgung zu gewährleisten", "Um den Gesamtstrom zu reduzieren", "Um die Spannung zu erhöhen", "Um den Gesamtstrom zu reduzieren"], correct: 0 }
+
+        { question: "In einer Reihenschaltung führt der Ausfall eines Gerätes zum Ausfall aller anderen Geräte in der Schaltung.", answers: ["Richtig", "Falsch"], correct: 0 },
+
     ],
 
     Stromgefahr: [
@@ -104,11 +180,11 @@ const questions = {
 
 { question: "Wie viele Schutzklassen (SK) gibt es ?", answers: ["2", "4", "3", "5"], correct: 2 },
 
-{ question: "Was ist das Besondere an SK 2 ?", answers: ["Bei SK 2 muss ein PE angeschlossen werden", "Für SK 2 gilt eine maximale Betriebsspannung von 120 V DC", "Für SK 2 gilt eine maximale Betriebsspannung von 50 V AC", "SK 2 besitzt eine doppelte und verstärkte Isolierung"], correct: 3 },
+{ question: "Was ist das Besondere an SK 2 ?", answers: ["Bei SK 2 muss ein PE angeschlossen werden", "Für SK 2 gilt eine maximale Betriebsspannung von 120 V DC", "Für SK 2 gilt eine maximale Betriebsspannung von 50 V AC", "SK 2 besitzt eine doppelte oder verstärkte Isolierung"], correct: 3 },
 
-{ question: "Was ist das Besondere an SK 1 ?", answers: ["Bei SK 1 muss ein PE angeschlossen werden", "SK 1 besitzt eine doppelte und verstärkte Isolierung", "Für SK 1 gilt eine maximale Betriebsspannung von 50 V AC", "Für SK 1 gilt eine maximale Betriebsspannung von 120 V DC"], correct: 0 },
+{ question: "Was ist das Besondere an SK 1 ?", answers: ["Bei SK 1 muss ein PE angeschlossen werden", "SK 1 besitzt eine doppelte oder verstärkte Isolierung", "Für SK 1 gilt eine maximale Betriebsspannung von 50 V AC", "Für SK 1 gilt eine maximale Betriebsspannung von 120 V DC"], correct: 0 },
 
-{ question: "Was ist das Besondere an SK 3 ?", answers: ["Bei SK 3 muss ein PE angeschlossen werden", "SK 3 besitzt eine doppelte und verstärkte Isolierung", "Für SK 3 gilt eine maximale Betriebsspannung von 50 V AC", "Für SK 3 gilt eine maximale Betriebsspannung von 120 V DC"], correct: [2, 3] },
+{ question: "Was ist das Besondere an SK 3 ?", answers: ["Bei SK 3 muss ein PE angeschlossen werden", "SK 3 besitzt eine doppelte oder verstärkte Isolierung", "Für SK 3 gilt eine maximale Betriebsspannung von 50 V AC", "Für SK 3 gilt eine maximale Betriebsspannung von 120 V DC"], correct: [2, 3] },
 
 { question: "Was versteht man unter dem Begriff SELV ?", answers: ["Maximale Betriebsspannung von 120 V DC", "Security Extra Low Voltage", "Betriebskleinspannung", "Maximale Betriebsspannung von 50 V AC"], correct: [0, 3] },
 
@@ -120,13 +196,10 @@ const questions = {
 
 { question: "Welche Gefahr besteht, wenn die Loslassgrenze überschritten wird ?", answers: ["Man löst sich reflexartig von der Stromquelle", "Keine Gefahr, da Ströme oberhalb der Grenze kaum spürbar sind", "Ein Loslassen ist in der Regel nicht mehr möglich", "Ein Loslassen ist in der Regel noch möglich"], correct: 2 },
 
-{ question: "Wie groß ist die Körperdurchströmung bei 230 V und 1 kOhm ?", answers: ["230 mA", "0,23 mA", "0,23 A", "30 mA"], 
-  correct: [0, 2] },
-
 { question: "Welche Schutzeinrichtung gilt für den Personenschutz ?", answers: ["RCD", "Schmelzsicherung", "LS-Schalter", "FI"], 
   correct: [0, 3] },
 
-{ question: "Wie groß darf der Differenzfehlerstrom  für FI's für Personenschutz höchstens sein ?", answers: ["0,3 mA", "0,03 A", "300 mA", "30 mA"], correct: [1, 3] },
+{ question: "Wie groß darf der Differenzfehlernennstrom  für FI's für Personenschutz höchstens sein ?", answers: ["0,3 mA", "0,03 A", "300 mA", "30 mA"], correct: [1, 3] },
 
 { question: "Welcher FI kommt für den Brandschutz zum Einsatz ?", answers: ["0,3 mA", "0,03 A", "300 mA", "0,30 A"], correct: [2, 3] },
 
@@ -135,12 +208,12 @@ const questions = {
 { question: "Spätestens wann muss eine Schutzeinrichtung im TT-Netz bei 230 V abschalten ?", answers: ["innerhalb von 0,2 s", "nach 200 ms", "spätestens nach 0,02 s", "nach 0,2 s"], correct: 0 },
 
             {
-                question: "Ein Wechselstrom von 5 mA durch den menschlichen Körper ist tödlich.",
+                question: "Ein Wechselstrom von 0,5 mA durch den menschlichen Körper ist tödlich.",
                 answers: ["Richtig", "Falsch"],
                 correct: 1
             },
             {
-                question: "Der Widerstand des menschlichen Körpers variiert abhängig von Faktoren wie Hautfeuchtigkeit und -dicke.",
+                question: "Der Körperwiderstand variiert, abhängig von Faktoren wie Hautfeuchtigkeit und -dicke.",
                 answers: ["Richtig", "Falsch"],
                 correct: 0
             },
@@ -170,17 +243,17 @@ const questions = {
         correct: 2
     },
     {
-        question: "Was bedeutet die Abkürzung 'LS' im Begriff LS-Schalter?",
+        question: "Was bedeutet die Abkürzung LS-Schalter?",
         answers: [
             "Leitungssicherung",
             "Leistungsschalter",
-            "Leitungsschutz",
+            "Leitungsschutz-Schalter",
             "Lasersicherung"
         ],
         correct: 2
     },
     {
-        question: "Wann löst ein Leitungsschutzschalter mit Charakteristik B bei einem Kurzschluss aus?",
+        question: "Ab welcher Höhe löst ein LS-Schalter vom Typ B bei Kurzschluss aus?",
         answers: [
             "Beim 3-fachen Nennstrom der Sicherung",
             "Beim 5-fachen Nennstrom der Sicherung",
@@ -200,28 +273,6 @@ const questions = {
         correct: 0
     },
 
-    // Multiple-Choice-Fragen
-    {
-        question: "Welche Funktionen hat ein Leitungsschutzschalter (LS-Schalter)?",
-        answers: [
-            "Schutz vor Überlast",
-            "Schutz vor Überspannung",
-            "Schutz vor Kurzschluss",
-            "Schutz vor Stromausfall"
-        ],
-        correct: [0, 2]
-    },
-    {
-        question: "Welche Auslöseeigenschaften können Leitungsschutzschalter haben?",
-        answers: [
-            "Auslösung bei Überlast",
-            "Auslösung bei Kurzschluss",
-            "Auslösung bei Erdschluss",
-            "Auslösung bei Spannungsschwankungen"
-        ],
-        correct: [0, 1]
-    },
-
     // Ja-/Nein-Fragen
     {
         question: "Schützt ein Leitungsschutzschalter vor Überlast und Kurzschluss?",
@@ -232,7 +283,7 @@ const questions = {
         correct: 0
     },
     {
-        question: "Löst ein Leitungsschutzschalter mit der Charakteristik B bei einem Kurzschluss beim 10-fachen Nennstrom aus?",
+        question: "Löst ein Leitungsschutzschalter mit der Charakteristik B bei einem Kurzschluss in Höhe des 10-fachen Nennstroms aus?",
         answers: [
             "Ja",
             "Nein"
@@ -240,18 +291,8 @@ const questions = {
         correct: 0
     },
 
-    // Richtig-/Falsch-Fragen
-    {
-        question: "Ein Leitungsschutzschalter ist auch als Sicherungsautomat bekannt.",
-        answers: [
-            "Richtig",
-            "Falsch"
-        ],
-        correct: 0
-    },
-
         {
-            question: "Was ist die Abkürzung für einen Fehlerstrom-Schutzschalter?",
+            question: "Wie lautet die englische Abkürzung des Fehlerstrom-Schutzschalters?",
             answers: [
                 "LCB",
                 "RCD",
@@ -265,7 +306,7 @@ const questions = {
             answers: [
                 "Vor Überspannung",
                 "Vor Kurzschluss",
-                "Vor Brand und personenschäden bei Fehlernennströmen bis 30mA",
+                "Vor Personenschäden bei Fehlernennströmen bis 30 mA",
                 "Vor Stromschwankungen"
             ],
             correct: 2
@@ -281,13 +322,11 @@ const questions = {
             correct: 0
         },
         {
-            question: "Ist ein Fehlerstrom-Schutzschalter (RCD) in Neuinstallationen Pflicht?",
+            question: "Sind Fehlerstrom-Schutzschalter (RCD) Pflicht in Neuinstallationen?",
             answers: [
                 "Ja",
                 "Nein",
-                "",
-                ""
-            ],
+                 ],
             correct: 0
         },
         {
@@ -332,18 +371,10 @@ const questions = {
             ],
             correct: 1
         },
-        {
-            question: "Ein Fehlerstrom-Schutzschalter (RCD) ist in Neuinstallationen Pflicht.",
-            answers: [
-                "Ja",
-                "Nein"
-            ],
-            correct: 0
-        },
 
         // Richtig-/Falsch-Fragen
         {
-            question: "Ein Fehlerstrom-Schutzschalter (RCD) bietet Schutz vor Überlast.",
+            question: "Ein Fehlerstrom-Schutzschalter (RCD) bietet Schutz vor Kurzschluss.",
             answers: [
                 "Richtig",
                 "Falsch"
@@ -423,7 +454,7 @@ const questions = {
             correct: 1
         },
         {
-            question: "Welches Gerät ist ein typisches Beispiel für Schutzklasse 1?",
+            question: "Welche Auswahlmöglichkeit ist ein typisches Beispiel für Schutzklasse 1?",
             answers: [
                 "Gehäuse einer Handbohrmaschine",
                 "Kunststoffabdeckung einer Steckdose",
@@ -453,17 +484,6 @@ const questions = {
             correct: 2
         },
 
-        // Multiple-Choice-Fragen
-        {
-            question: "Welche maximalen Berührungsspannungen sind zulässig?",
-            answers: [
-                "50 V AC",
-                "120 V DC",
-                "75 V AC",
-                "100 V DC"
-            ],
-            correct: [0, 1]
-        },
         {
             question: "Was charakterisiert die Schutzklasse 2?",
             answers: [
@@ -485,16 +505,6 @@ const questions = {
             correct: [0, 1, 3]
         },
         {
-            question: "Welche Geräte gehören zur Schutzklasse 2?",
-            answers: [
-                "Gehäuse einer Handbohrmaschine",
-                "Kunststoffabdeckung einer Steckdose",
-                "Medizinisch genutzte Geräte",
-                "Spannungsversorgung von Kinderspielzeug"
-            ],
-            correct: [0, 1]
-        },
-        {
             question: "Welche Geräte fallen in die Schutzklasse 3?",
             answers: [
                 "Medizinisch genutzte Geräte",
@@ -505,15 +515,6 @@ const questions = {
             correct: [0, 1, 2]
         },
 
-        // Ja-/Nein-Fragen
-        {
-            question: "Im TN-Netz beträgt die maximale Abschaltzeit bei 230 V 400 ms?",
-            answers: [
-                "Ja",
-                "Nein"
-            ],
-            correct: 0
-        },
         {
             question: "In Schutzklasse 1 muss der Schutzleiter (PE) angeschlossen werden?",
             answers: [
@@ -548,14 +549,6 @@ const questions = {
             ],
             correct: 1
         },
-        {
-            question: "Beispiele für Schutzklasse 3 sind medizinisch genutzte Geräte und Spannungsversorgungen für Kinderspielzeug.",
-            answers: [
-                "Richtig",
-                "Falsch"
-            ],
-            correct: 0
-        },
 
         // Single-Choice-Fragen
         {
@@ -581,10 +574,10 @@ const questions = {
         {
             question: "Welche Maßnahme gehört zum Basisschutz?",
             answers: [
-                "Kunststoffmantel von Leitungen und Kabeln",
+                "Kunststoffmantel von Leitungen",
                 "Fehlerstromschutzschalter",
                 "Sicherungen",
-                "Verstärkte Isolierung"
+                "Metallabdeckung"
             ],
             correct: 0
         },
@@ -609,18 +602,7 @@ const questions = {
             correct: 0
         },
 
-        // Multiple-Choice-Fragen
-        {
-            question: "Welche der folgenden Maßnahmen sind Beispiele für den Basisschutz?",
-            answers: [
-                "Nichtleitende Umhüllungen",
-                "Kunststoffmantel von Leitungen und Kabeln",
-                "Schutz durch Absperrung",
-                "Fehlerstromschutzschalter"
-            ],
-            correct: [0, 1, 2]
-        },
-        {
+       {
             question: "Welche der folgenden Maßnahmen gehören zum Fehlerschutz?",
             answers: [
                 "Sicherungen",
@@ -649,15 +631,6 @@ const questions = {
             correct: 0
         },
 
-        // Richtig-/Falsch-Fragen
-        {
-            question: "Nichtleitende Umhüllungen sind ein Beispiel für Basisschutz.",
-            answers: [
-                "Richtig",
-                "Falsch"
-            ],
-            correct: 0
-        },
         {
             question: "Sicherungen gehören zum Basisschutz.",
             answers: [
@@ -681,33 +654,6 @@ const questions = {
                 "Falsch"
             ],
             correct: 0
-        },
-        {
-            question: "Schutz durch Absperrung ist eine Maßnahme des Fehlerschutzes.",
-            answers: [
-                "Richtig",
-                "Falsch"
-            ],
-            correct: 1
-        },
-        {
-            question: "Der Kunststoffmantel von Kabeln ist eine Maßnahme des Basisschutzes.",
-            answers: [
-                "Richtig",
-                "Falsch"
-            ],
-            correct: 0
-        },
-
-        {
-            question: "Welches Netz hat keinen direkten Bezug zur Erde am Neutralleiter?",
-            answers: [
-                "TN-C-Netz",
-                "IT-Netz",
-                "TN-S-Netz",
-                "TT-Netz"
-            ],
-            correct: 1 // IT-Netz
         },
         {
             question: "In welchem Netz wird der PEN-Leiter sowohl als Neutralleiter als auch Schutzleiter verwendet?",
@@ -787,26 +733,7 @@ const questions = {
             ],
             correct: 0 // Richtig
         },
-        {
-            question: "IT-Netze sind besonders anfällig für Erdschlüsse und benötigen daher besondere Schutzmaßnahmen.",
-            answers: [
-                "Richtig",
-                "Falsch"
-            ],
-            correct: 0 // Richtig
-        },
         
-        // Erklärung der Abkürzungen
-        {
-            question: "Wofür steht die Abkürzung TN-S-Netz?",
-            answers: [
-                "Terra Neutral Separate Netz",
-                "Transformer Neutral Separate Netz",
-                "Terre-Neutral-Séparé Netz",
-                "Tensiometer Network Separate"
-            ],
-            correct: 2 // Terre-Neutral-Séparé Netz
-        },
         {
             question: "Wofür steht die Abkürzung TT-Netz?",
             answers: [
@@ -871,7 +798,7 @@ const questions = {
                 correct: 0
             },
             {
-                question: "Ein Isolationswiderstand von weniger als 1 MΩ ist bei elektrischen Arbeitsmitteln unbedingt zulässig.",
+                question: "Ein Isolationswiderstand von weniger als 1 MΩ ist bei elektrischen Arbeitsmitteln zulässig.",
                 answers: ["Richtig", "Falsch"],
                 correct: 1
             },
@@ -882,7 +809,7 @@ const questions = {
             },
             {
                 question: "Welche Prüfschritte müssen bei der Sichtprüfung beachtet werden?",
-                answers: ["Verfärbungen and Steckverbindungen", "Beschädigungen am Kabelmantel", "Lockere oder beschädigte Kontakte", "Funktionsprüfung"],
+                answers: ["Verfärbungen von Steckverbindungen", "Beschädigungen am Basisschutz", "Lockere oder beschädigte Kontakte", "Funktionsprüfung"],
                 correct: [0, 1, 2]
             },
             {
@@ -895,20 +822,11 @@ const questions = {
         answers: [
             "Geräte, die ständig an einen festen Ort gebunden sind",
             "Geräte, die nicht an einen festen Ort gebunden sind und bewegt werden können",
-            "Geräte, die für den Einsatz in Explosion gefährdeten Bereichen zugelassen sind"
+            "Geräte, die für den Einsatz in explosiongefährdeten Bereichen zugelassen sind"
         ],
         correct: 1
     },
-    {
-        question: "Welche Prüfungen sind bei ortsveränderlichen elektrischen Arbeitsmitteln durchzuführen?",
-        answers: [
-            "Sichtprüfung",
-            "Isolationswiderstandsprüfung",
-            "Funktionsprüfung",
-            "Prüfung des Kabels und der Stecker"
-        ],
-        correct: [0, 1, 2, 3]
-    },
+
             {
                 question: "Welche Prüfungen müssen bei Betriebsmitteln der Schutzklasse 2 durchgeführt werden?",
                 answers: ["Sichtprüfung", "Isolationswiderstandsmessung", "Schutzleiterwiderstandsmessung", "Funktionsprüfung"],
@@ -930,11 +848,6 @@ const questions = {
                 correct: 0
             },
             {
-                question: "In welchem Umfeld werden SELV-Systeme häufig verwendet?",
-                answers: ["Feuchträume", "Kinderspielzeug", "Industriekontrollen", "Medizinische Geräte"],
-                correct: [0, 1, 3]
-            },
-            {
                 question: "SELV sorgt dafür, dass auch bei vorhersehbaren Fehlerzuständen keine gefährliche Berührungsspannung auftreten kann.",
                 answers: ["Richtig", "Falsch"],
                 correct: 0
@@ -952,7 +865,7 @@ const questions = {
             },
             {
                 question: "Wer darf Arbeiten unter Spannung (AuS) gemäß DGUV Vorschrift 3 durchführen ?",
-                answers: ["Jeder Mitarbeiter", "Nur elektrotechnisch unterwiesene Personen", "Nur Elektrofachkräfte mit spezieller AuS-Unterweisung", "Nur der Arbeitgeber"],
+                answers: ["Jeder Mitarbeiter", "Elektrotechnisch unterwiesene Personen", "Elektrofachkräfte mit spezieller AuS-Unterweisung", "Der Arbeitgeber"],
                 correct: 2
             },
             {
@@ -996,11 +909,6 @@ const questions = {
                 correct: 0
             },
             {
-                question: "Ist es notwendig, spezielle Schutzausrüstung (PSA) bei Arbeiten unter Spannung zu tragen ?",
-                answers: ["Ja", "Nein"],
-                correct: 0
-            },
-            {
                 question: "Darf jede Elektrofachkraft Arbeiten unter Spannung ausführen ?",
                 answers: ["Ja", "Nein"],
                 correct: 1
@@ -1010,10 +918,10 @@ const questions = {
                 answers: [
                     "Wenn der Kurzschlussstrom an der Arbeitsstelle höchstens 3 mA AC oder 12 mA DC beträgt, oder",
                     "Wenn die Energie an der Arbeitsstelle nicht mehr als 350 mJ beträgt, oder",
-                    "Wenn durch Isolierung des Standortes oder der aktiven Teile oder durch Potentialausgleich eine Potentialüberbrückung verhindert ist, oder",
-                    "Wenn die Berührungsspannung weniger als AC 50 V oder DC 120 V beträgt."
+                    "Wenn durch Isolierung des Standortes oder der aktiven Teile oder durch Potentialausgleich eine Potentialüberbrückung verhindert wird, oder",
+                    "Wenn die Berührungsspannung mehr als AC 50 V oder DC 120 V beträgt."
                 ],
-                correct: [0, 1, 2, 3]
+                correct: [0, 1, 2]
             },
             {
                 question: "Wie lautet die erste der fünf Sicherheitsregeln, um im spannungsfreien Zustand zu arbeiten ?",
@@ -1030,19 +938,13 @@ const questions = {
 
 
     Erste_Hilfe: [
-
         
 {
-    question: "Welche der folgenden Maßnahmen ist die erste und wichtigste bei einem Stromunfall ?",
+    question: "Welche der folgenden Maßnahmen ist grundsätzlich die erste und wichtigste bei einem Stromunfall ?",
     answers: ["Den Notruf 112 wählen", "Die verletzte Person ansprechen", "Die Stromquelle deaktivieren", "Erste-Hilfe leisten"],
     correct: 2
 },
 
-{
-    question: "Welche der folgenden Schutzausrüstungen ist unbedingt notwendig beim Versuch, eine Person von einer Stromquelle zu trennen ?",
-    answers: ["Helm", "Gummihandschuhe", "Goggles", "Atemmaske"],
-    correct: 1
-},
 
 {
     question: "Welche Symptome können bei einem Stromschlag auftreten ?",
@@ -1080,10 +982,9 @@ const questions = {
 
 {
     question: "Welche Aussagen sind richtig ?",
-    answers: ["Ungeübte Laien können auf Beatmung bei Reanimation verzichten", "Beatmung hat Vorrang zur Herzdruckmassage", "Notruf absetzen und auf Rettungsdienst warten", "Ist man allein und die verunglückte Person bewusstlos, Wiederbelebung starten und nach einer Minute NOTRUF setzen"],
-    correct: [0, 3]
+    answers: ["Ungeübte Laien können auf Beatmung bei Reanimation verzichten", "Beatmung hat Vorrang zur Herzdruckmassage", "Notruf absetzen und auf Rettungsdienst warten", "Ist man allein und die verunglückte Person bewusstlos, warten und nach einer Minute NOTRUF setzen"],
+    correct: 0
 },
-
 
 {
     question: "Welche Aussage ist richtig ?",
@@ -1091,10 +992,9 @@ const questions = {
     correct: 0
 },
 
-
 {
     question: "Welche Aussagen sind falsch ?",
-    answers: ["Defibrillatoren sind auch durch Laien bedienbar", "Während Körperdurchströmung Person nicht mit bloßen Händen anfassen", "Bei Niederspannung ist anfassen mit bloßen Händen möglich", "Herzdruckmassage dürfen nur Ersthelfer durchführen"],
+    answers: ["Defibrillatoren sind auch durch Laien bedienbar", "Während einer Körperdurchströmung darf die Person nicht mit bloßen Händen angefasst werden", "Bei Niederspannung ist anfassen mit bloßen Händen möglich", "Herzdruckmassage dürfen nur Ersthelfer durchführen"],
     correct: [2, 3]
 },
 
@@ -1105,9 +1005,9 @@ const questions = {
 
         // Single-Choice Fragen
         {
-            question: "Wer ist in einem Unternehmen für die Sicherheit der elektrotechnischen Arbeiten verantwortlich?",
+            question: "Wer ist in einem Unternehmen für die sichere Durchführung elektrotechnischer Arbeiten verantwortlich?",
             answers: ["Der Arbeitgeber", "Die Elektrofachkraft", "Die Mitarbeiter", "Die Sicherheitsfachkraft"],
-            correct: 0
+            correct: 1
         },
         {
             question: "Welche Pflicht hat eine verantwortliche Elektrofachkraft (VEFK)?",
@@ -1132,11 +1032,6 @@ const questions = {
             correct: [0, 1, 3]
         },
         {
-            question: "Welche Dokumente sind für die Sicherheitsverantwortung einer VEFK wichtig?",
-            answers: ["Gefährdungsbeurteilungen", "Arbeitsanweisungen", "Mitarbeiterlisten", "Schulungsnachweise"],
-            correct: [0, 1, 3]
-        },
-        {
             question: "Welche Personen müssen regelmäßig zur Arbeitssicherheit unterwiesen werden?",
             answers: ["Alle elektrotechnisch unterwiesenen Personen", "Nur neue Mitarbeiter", "Nur Führungskräfte", "Alle Mitarbeiter mit Zugang zu elektrischen Anlagen"],
             correct: [0, 3]
@@ -1144,7 +1039,7 @@ const questions = {
 
         // Richtig-Falsch Fragen
         {
-            question: "Eine VEFK haftet auch, wenn sie ihre Aufgaben nicht ordnungsgemäß wahrnimmt.",
+            question: "Eine VEFK haftet, wenn sie ihre Aufgaben nicht ordnungsgemäß wahrnimmt.",
             answers: ["Richtig", "Falsch"],
             correct: 0
         },
@@ -1166,27 +1061,11 @@ const questions = {
             correct: 0
         },
         {
-            question: "Sind regelmäßige Sicherheitskontrollen in einem Betrieb Pflicht?",
-            answers: ["Ja", "Nein"],
-            correct: 0
-        },
-        {
             question: "Müssen alle Elektrofachkräfte jährlich eine Unterweisung erhalten?",
             answers: ["Ja", "Nein"],
             correct: 0
         },
 
-        // Weitere Fragen
-        {
-            question: "Was gehört zu den Grundpflichten einer verantwortlichen Elektrofachkraft?",
-            answers: ["Überwachung der Einhaltung von Vorschriften", "Durchführung aller elektrischen Arbeiten", "Planung von Neubauten", "Erstellung von Rechnungen"],
-            correct: 0
-        },
-        {
-            question: "Welche Maßnahmen müssen bei einer Gefährdungsbeurteilung getroffen werden?",
-            answers: ["Ermittlung der Gefahren", "Festlegung von Schutzmaßnahmen", "Erstellung eines Arbeitsplans", "Regelmäßige Überprüfung"],
-            correct: [0, 1, 3]
-        },
         {
             question: "Welche Vorschrift legt die Verantwortung für die elektrische Sicherheit fest?",
             answers: ["DIN VDE 1000-10", "Arbeitsschutzgesetz", "DGUV Vorschrift 3", "BGB"],
@@ -1203,21 +1082,6 @@ const questions = {
             correct: 1
         },
         {
-            question: "Welche Behörde kann bei Verstößen gegen Sicherheitsvorschriften Sanktionen verhängen?",
-            answers: ["BG ETEM", "Arbeitsschutzbehörde", "Elektroinnung", "IHK"],
-            correct: [0, 1]
-        },
-        {
-            question: "Wie oft sollten Arbeitsmittel nach DGUV Vorschrift 3 geprüft werden?",
-            answers: ["Jährlich", "Alle zwei Jahre", "Nur nach Bedarf", "Alle fünf Jahre"],
-            correct: 0
-        },
-        {
-            question: "Welche Konsequenzen drohen bei Missachtung von Sicherheitsvorschriften?",
-            answers: ["Bußgelder", "Haftung des Arbeitgebers", "Entzug der Betriebserlaubnis", "Keine Konsequenzen"],
-            correct: [0, 1, 2]
-        },
-        {
             question: "Darf eine elektrotechnisch unterwiesene Person (EUP) eigenständig an elektrischen Anlagen arbeiten?",
             answers: ["Ja", "Nein"],
             correct: 1
@@ -1232,131 +1096,73 @@ const questions = {
             answers: ["Ja", "Nein"],
             correct: 0
         },
-        {
-            question: "Welche Schutzmaßnahmen sind bei Arbeiten unter Spannung erforderlich?",
-            answers: ["PSA", "Isoliermatten", "Schutzhelme", "Gummihandschuhe"],
-            correct: [0, 1, 3]
-        }
 
 ],
 
 
     Sonstiges: [
 
-        { question: "Wer ist für die Umsetzung des Arbeitsschutzes verantwortlich ?", answers: ["Der/Die Unternehmer*in", "Die Angestellten", "Der Staat", "Die Kommunen"], correct: [0, 1] },
-        { question: "Was bedeutet PSA im arbeitsschutzrechtlichen Sinne ?", answers: ["Plötzliche-Selbst-Auslösung", "Persönliche Schutzausrüstung", "Public Service Announcement", "Professional Services Automation"], correct: [1] },
-        { question: "Wer muss die PSA zur Verfügung stellen ?", answers: ["Der/Die Unternehmer*in", "Die Angestellten selbst", "Je zur Hälfte beide Seiten", "Nur der Staat"], correct: [0] },
-        { question: "Wann muss das Personal unterwiesen werden ?", answers: ["Alle 4 Jahre", "Nach Ermessen des Unternehmers/der Unternehmerin", "Mindestens einmal jährlich", "Nach einem Unfall"], correct: [2] },
+        { question: "Was bedeutet PSA im arbeitsschutzrechtlichen Sinne ?", answers: ["Plötzliche-Selbst-Auslösung", "Persönliche Schutzausrüstung", "Public Service Announcement", "Professional Services Automation"], correct: 1 },
+
+        { question: "Wer muss die PSA zur Verfügung stellen ?", answers: ["Der/Die Unternehmer*in", "Die Angestellten selbst", "Je zur Hälfte beide Seiten", "Nur der Staat"], correct: 0 },
+
         { question: "Soll grundsätzlich unter Spannung (AuS) gearbeitet werden ?", answers: ["Ja, wenn der Vorgesetze das erlaubt", "Ja, wenn die Arbeit dadurch schneller beendet werden kann", "Ja, aber nur Ingenieure", "Nein, grundsätzlich nicht"], correct: [3] },
-        { question: "Wann gilt eine Anlage als spannungsfrei ?", answers: ["Wenn das Messgerät 0 V anzeigt", "Wenn die Schutzeinrichtung abgeschaltet ist und das Messgerät 0 V anzeigt", "Wenn Anlage freigeschaltet und gegen Wiedereinschalten gesichert ist", "Wenn Anlage freigeschaltet, gegen Wiedereinschalten gesichert und messtechnisch geprüft ist"], correct: [3] },
-        { question: "Was bedeutet EFK ?", answers: ["Elektrische Führungskraft", "Elektriker für Kraftstrom", "Elektrofachkraft", "Elektrotechnisch unterwiesene Person"], correct: [2] },
-        { question: "Was ist eine VEFK ?", answers: ["Vorstehende Elektrische Führungskraft", "Verantwortliche Elektrotechnisch unterwiesene Person", "Verantwortliche Elektrofachkraft", "Verantwortlicher Elektriker für Kraftstrom"], correct: [2] },
-        { question: "Worum handelt es sich um einen Qualifikationsstatus ?", answers: ["EFK", "Ingenieur", "EffT", "Elektroniker"], correct: [0, 2] },
-        { question: "Bis zu welchem Wert gilt der Niederspannungsbereich im DC-Bereich ?", answers: ["Bis 50 V", "Bis 120 V", "Bis 1000 V", "Bis 1500 V"], correct: [3] },
-        { question: "Bis zu welchem Wert gilt der Niederspannungsbereich im AC-Bereich ?", answers: ["Bis 1 kV", "Bis 60 V", "Bis 1000 V", "Bis 1,5 kV"], correct: [2] },
-        { question: "Wer ernennt später nach Theorie und Praxis die Person zur EffT ?", answers: ["Der Eigentümer des Unternehmens", "Der Standortleiter des Unternehmens", "Eine VEFK (interne oder externe)", "Die disziplinarisch verantwortliche Person im Unternehmen"], correct: [2] },
+
+        { question: "Wann gilt eine Anlage als spannungsfrei ?", answers: ["Wenn das Messgerät 0 V anzeigt", "Wenn die Schutzeinrichtung abgeschaltet ist und das Messgerät 0 V anzeigt", "Wenn Anlage freigeschaltet und gegen Wiedereinschalten gesichert ist", "Wenn Anlage freigeschaltet, gegen Wiedereinschalten gesichert und spannungsfrei gemessen ist"], correct: 3 },
+
+        { question: "Wer ernennt Sie nach Theorie und Praxis zur EffT ?", answers: ["Der Eigentümer des Unternehmens", "Der Standortleiter des Unternehmens", "Eine VEFK (interne oder externe)", "Die disziplinarisch verantwortliche Person im Unternehmen"], correct: [2] },
+
         { question: "In welcher Form hat die Ernennung zu erfolgen ?", answers: ["nur schriftlich, ohne Unterschrift", "nur mündlich", "nur schriftlich mit beiden Unterschriften und Datum", "nur schriftlich mit Datum"], correct: [2] },
-        { question: "Muss vor Ernennung zur EffT eine Arbeitsanweisung vorliegen ?", answers: ["Nein, das ist auf freiwilliger Basis", "Ja, diese ergibt sich schließlich aus einer vorgelagerten Gefährdungsbeurteilung", "Ja, eine Gefährdungsbeurteilung ist dagegen nicht notwendig", "Ja, aber nur im Hochspannungsbereich"], correct: [1] },
-        { question: "Welche Qualifikation muss eine verantwortliche Elektrofachkraft (VEFK) haben ?", answers: ["Eine Berufsausbildung reicht", "Meister im ET-Bereich", "Techniker*in oder Ingenieur*in im ET-Bereich", "Eigentümernachweis des Unternehmens reicht"], correct: [1, 2] },
-        { question: "Wofür steht die engl. Abkürzung AC ?", answers: ["Wechselspannung", "Gleichspannung", "Dreieckspannung", "Rechteckspannung"], correct: [0] },
-        { question: "Wofür steht die engl. Abkürzung DC ?", answers: ["Rechteckspannung", "Wechselspannung", "Dreieckspannung", "Gleichspannung"], correct: [3] },
-        { question: "Was bedeuten die zwei übereinander stehenden Dreiecke auf Elektrowerkzeug und Schutzausrüstung ?", answers: ["Werkzeug oder Hilfsmittel nicht stapeln", "Doppelte Vorsicht geboten", "Nur für private Zwecke einsetzbar", "Doppeldreieck-Symbol weist Eignung für das Arbeiten an unter Spannung stehenden Teilen aus"], correct: [3] },
+
+        { question: "Muss vor Ernennung zur EffT eine Arbeitsanweisung vorliegen ?", answers: ["Nein, das ist auf freiwilliger Basis", "Ja, diese ergibt sich schließlich aus der vorgelagerten Gefährdungsbeurteilung", "Ja, eine Gefährdungsbeurteilung ist dagegen nicht notwendig", "Ja, aber nur im Hochspannungsbereich"], correct: [1] },
+
+        { question: "Welche Qualifikation muss eine verantwortliche Elektrofachkraft (VEFK) haben ?", answers: ["Eine Berufsausbildung reicht", "Meister*in im ET-Bereich", "Techniker*in oder Ingenieur*in im ET-Bereich", "Eigentümernachweis des Unternehmens reicht"], correct: [1, 2] },
+
+        { question: "Was bedeuten die zwei übereinander stehenden Dreiecke z.B. auf Elektrowerkzeugen und Schutzausrüstungen ?", answers: ["Werkzeug oder Hilfsmittel nicht stapeln", "Doppelte Vorsicht geboten", "Nur für private Zwecke einsetzbar", "Symbol weist Eignung für das Arbeiten an unter Spannung stehenden Teilen aus"], correct: [3] },
+
         { question: "Wie heißt der Titel des Verbotszeichen P10 ?", answers: ["Schalten verboten", "Einschalten verboten", "Nicht betätigen", "Nicht schalten"], correct: [3] },
+
         { question: "Wie heißt der Titel des Verbotszeichen P031 ?", answers: ["Schalten verboten", "Einschalten verboten", "Nicht betätigen", "Nicht schalten"], correct: [0] },
-        { question: "Darf zur Umsetzung der Regel 'Gegen Wiedereinschalten sichern' auch Isolierband genutzt werden ?", answers: ["Ja, durchaus üblich", "Wenn nichts weiter da ist", "Keinesfalls. Es handelt sich um eine fahrlässige Handlung", "Wenn, dann nur rotes Isolierband"], correct: [2] },
 
     ],
 
-    Sonstiges: [
-
-        { question: "Wer ist für die Umsetzung des Arbeitsschutzes verantwortlich ?", answers: ["Der/Die Unternehmer*in", "Die Angestellten", "Der Staat", "Die Kommunen"], correct: [0, 1] },
-        { question: "Was bedeutet PSA im arbeitsschutzrechtlichen Sinne ?", answers: ["Plötzliche-Selbst-Auslösung", "Persönliche Schutzausrüstung", "Public Service Announcement", "Professional Services Automation"], correct: [1] },
-        { question: "Wer muss die PSA zur Verfügung stellen ?", answers: ["Der/Die Unternehmer*in", "Die Angestellten selbst", "Je zur Hälfte beide Seiten", "Nur der Staat"], correct: [0] },
-        { question: "Wann muss das Personal unterwiesen werden ?", answers: ["Alle 4 Jahre", "Nach Ermessen des Unternehmers/der Unternehmerin", "Mindestens einmal jährlich", "Nach einem Unfall"], correct: [2] },
-        { question: "Soll grundsätzlich unter Spannung (AuS) gearbeitet werden ?", answers: ["Ja, wenn der Vorgesetze das erlaubt", "Ja, wenn die Arbeit dadurch schneller beendet werden kann", "Ja, aber nur Ingenieure", "Nein, grundsätzlich nicht"], correct: [3] },
-        { question: "Wann gilt eine Anlage als spannungsfrei ?", answers: ["Wenn das Messgerät 0 V anzeigt", "Wenn die Schutzeinrichtung abgeschaltet ist und das Messgerät 0 V anzeigt", "Wenn Anlage freigeschaltet und gegen Wiedereinschalten gesichert ist", "Wenn Anlage freigeschaltet, gegen Wiedereinschalten gesichert und messtechnisch geprüft ist"], correct: [3] },
-        { question: "Was bedeutet EFK ?", answers: ["Elektrische Führungskraft", "Elektriker für Kraftstrom", "Elektrofachkraft", "Elektrotechnisch unterwiesene Person"], correct: [2] },
-        { question: "Was ist eine VEFK ?", answers: ["Vorstehende Elektrische Führungskraft", "Verantwortliche Elektrotechnisch unterwiesene Person", "Verantwortliche Elektrofachkraft", "Verantwortlicher Elektriker für Kraftstrom"], correct: [2] },
-        { question: "Worum handelt es sich um einen Qualifikationsstatus ?", answers: ["EFK", "Ingenieur", "EffT", "Elektroniker"], correct: [0, 2] },
-        { question: "Bis zu welchem Wert gilt der Niederspannungsbereich im DC-Bereich ?", answers: ["Bis 50 V", "Bis 120 V", "Bis 1000 V", "Bis 1500 V"], correct: [3] },
-        { question: "Bis zu welchem Wert gilt der Niederspannungsbereich im AC-Bereich ?", answers: ["Bis 1 kV", "Bis 60 V", "Bis 1000 V", "Bis 1,5 kV"], correct: [2] },
-        { question: "Wer ernennt später nach Theorie und Praxis die Person zur EffT ?", answers: ["Der Eigentümer des Unternehmens", "Der Standortleiter des Unternehmens", "Eine VEFK (interne oder externe)", "Die disziplinarisch verantwortliche Person im Unternehmen"], correct: [2] },
-        { question: "In welcher Form hat die Ernennung zu erfolgen ?", answers: ["nur schriftlich, ohne Unterschrift", "nur mündlich", "nur schriftlich mit beiden Unterschriften und Datum", "nur schriftlich mit Datum"], correct: [2] },
-        { question: "Muss vor Ernennung zur EffT eine Arbeitsanweisung vorliegen ?", answers: ["Nein, das ist auf freiwilliger Basis", "Ja, diese ergibt sich schließlich aus einer vorgelagerten Gefährdungsbeurteilung", "Ja, eine Gefährdungsbeurteilung ist dagegen nicht notwendig", "Ja, aber nur im Hochspannungsbereich"], correct: [1] },
-        { question: "Welche Qualifikation muss eine verantwortliche Elektrofachkraft (VEFK) haben ?", answers: ["Eine Berufsausbildung reicht", "Meister im ET-Bereich", "Techniker*in oder Ingenieur*in im ET-Bereich", "Eigentümernachweis des Unternehmens reicht"], correct: [1, 2] },
-        { question: "Wofür steht die engl. Abkürzung AC ?", answers: ["Wechselspannung", "Gleichspannung", "Dreieckspannung", "Rechteckspannung"], correct: [0] },
-        { question: "Wofür steht die engl. Abkürzung DC ?", answers: ["Rechteckspannung", "Wechselspannung", "Dreieckspannung", "Gleichspannung"], correct: [3] },
-        { question: "Was bedeuten die zwei übereinander stehenden Dreiecke auf Elektrowerkzeug und Schutzausrüstung ?", answers: ["Werkzeug oder Hilfsmittel nicht stapeln", "Doppelte Vorsicht geboten", "Nur für private Zwecke einsetzbar", "Doppeldreieck-Symbol weist Eignung für das Arbeiten an unter Spannung stehenden Teilen aus"], correct: [3] },
-        { question: "Wie heißt der Titel des Verbotszeichen P10 ?", answers: ["Schalten verboten", "Einschalten verboten", "Nicht betätigen", "Nicht schalten"], correct: [3] },
-        { question: "Wie heißt der Titel des Verbotszeichen P031 ?", answers: ["Schalten verboten", "Einschalten verboten", "Nicht betätigen", "Nicht schalten"], correct: [0] },
-        { question: "Darf zur Umsetzung der Regel 'Gegen Wiedereinschalten sichern' auch Isolierband genutzt werden ?", answers: ["Ja, durchaus üblich", "Wenn nichts weiter da ist", "Keinesfalls. Es handelt sich um eine fahrlässige Handlung", "Wenn, dann nur rotes Isolierband"], correct: [2] },
-
-    ],
 
     Messtechnik: [
 
 
-        { question: "Was passiert, wenn ich beim Multimeter DC statt AC einstelle und an einer Steckdose messe ?", answers: ["Das Gerät zeigt 0 V an", "Das Gerät schwankt zwischen - 230 V und + 230 V", "Es zeigt einen Wert um 50 V an", "Das Messgerät gibt einen Piepton aus"], correct: [0] },
+        { question: "Was passiert, wenn ich bei einem Multimeter DC statt AC einstelle und an einer aktiven Steckdose messe ?", answers: ["Das Gerät zeigt 0 V an", "Das Gerät schwankt zwischen - 230 V und + 230 V", "Es zeigt einen Wert um 50 V an", "Das Messgerät gibt einen Piepton aus"], correct: [0] },
+
+        { question: "Was passiert, wenn man in den Strommesserbeich schaltet und an 230 V misst ?", answers: ["Nix, Messgerät ist hochohmig genug", "Außer eine Anzeige von 0 V, passiert nichts weiter", "Die Gerätesicherung knallt durch", "Ich erschrecke mich und könnte von der Leiter stürzen"], correct: [2, 3] },
+
+        { question: "Mit welchem Messgerät kann man relativ gefahrlos die Spannungsfreiheit feststellen ?", answers: ["Mit einem zweipoligen Spannungsprüfer", "Mit einem einpoligen Spannungsprüfer", "Mit einem berührungslosen Spannungsprüfer", "Mit einem Multimeter"], correct: [0] },
+
+        { question: "Was muss vor jeder Verwendung eines Messgerätes getan werden ?", answers: ["Überprüfung auf Schäden", "Überprüfung auf Schäden, Eignung und Funktion", "Überprüfung auf Schäden und Eignung", "Überprüfung auf Funktion und Eignung", "Überprüfung auf Eignung"], correct: [1] },
 
 
-        { question: "Das Multmeter zeigt 0 V zwischen beiden Buchsen der Schuko-Steckdose an. Alles Okay ?", answers: ["Nein, es müssen beide Buchsen noch gegen PE gemessen werden", "Ja, immerhin werden 0 V angezeigt", "Nein, es kann auch ein Verdrahtungsfehler vorliegen", "Ja, im schlimmsten Fall rettet mich noch der FI"], correct: [0, 2] },
+        { question: "Was passiert, bei einer aktiven Anlage mit FI (0,3 A), wenn Sie L gegen Erde (PE) messen und die Druckknöpfe betätigen ?", answers: ["Das Messgerät zeigt 0 V an", "Der FI fliegt raus", "Das Messgerät vibriert", "Das Messgerät vibriert und zeigt 230 V an"], correct: [3] },
 
+        { question: "Was passiert, bei einer aktiven Anlage mit FI (0,5 A), wenn Sie L gegen Erde (PE) messen und die Druckknöpfe betätigen ?", answers: ["Der FI fliegt raus", "Das Messgerät vibriert und zeigt 230 V an", "Das Messgerät zeigt 0 V an", "Das Messgerät vibriert"], correct: [1] },
 
-        { question: "Was passiert, wenn man in den Strommesserbeich schaltet und an 230 V misst ?", answers: ["Nix, Messgerät ist hochohmig genug", "Außer eine Anzeige von 0 V, passiert nicht viel", "Die Gerätesicherung knallt durch", "Ich erschrecke mich und könnte von der Leiter stürzen"], correct: [2, 3] },
+        { question: "Was passiert, bei einer aktiven Anlage mit FI (0,03 A), wenn Sie L gegen Erde (PE) messen und die Druckknöpfe betätigen ?", answers: ["Der FI fliegt raus", "Das Messgerät vibriert und zeigt 230 V an", "Das Messgerät zeigt 0 V an", "Das Messgerät vibriert"], correct: [0] },
 
+        { question: "Welcher Fehler liegt vor, wenn Sie zwischen N und PE z.B. um die 50 V messen ?", answers: ["Die Phase L ist nicht da", "Das Messgerät ist defekt", "Eine N-Leiterunterbrechung", "Die Einspeisung des Netzbetreibers funktioniert nicht"], correct: [2] },
 
-        { question: "Mit welchem Messgerät misst man am sichersten die Spannungsfreiheit z.B. in der Haustechnik ?", answers: ["Mit einem zweipoligen Spannungsprüfer", "Mit einem einpoligen Spannungsprüfer", "Mit berührungslosen Spannungsprüfern", "Mit einem Multimeter"], correct: [0] },
-
-
-        { question: "Was muss getan werden, um Ströme messen zu können ?", answers: ["Das Messgerät in Reihe schalten", "Strommessgerät paralle am Messobjekt halten", "Eine Stromzange einsetzen, wenn möglich", "Über Stromzähler Strom ausrechnen"], correct: [0, 2] },
-
-
-        { question: "Was sagt die CAT-Kategorie von Messgeräten aus ?", answers: ["Die Kategorien geben Aufschluss, in welchen Bereichen ein Messgerät gefahrlos eingesetzt werden kann", "Diese geben Aufschluss, wer in welchen Bereichen ein Messgerät gefahrlos einsetzen darf", "Sie gibt die maximale Spannungshöhe an, die man damit messen darf", "Sie gibt den maximalen Strom an, den man damit messen darf"], correct: [1] },
-
-
-        { question: "Was muss vor jeder Verwendung des Messgerätes getan werden ?", answers: ["Überprüfung auf Schäden", "Überprüfung auf Schäden, Eignung und Funktion", "Überprüfung auf Schäden und Eignung", "Überprüfung auf Funktion und Eignung", "Überprüfung auf Eignung"], correct: [1] },
-
-
-        { question: "Was passiert, bei einer aktiven Anlage mit FI (0,3 A), wenn Sie L gegen Erde (PE) messen und den Druckknopf/die Druckknöpfe betätigen ?", answers: ["Das Messgerät zeigt 0 V an", "Der FI fliegt raus", "Das Messgerät vibriert", "Das Messgerät vibriert und zeigt 230 V an"], correct: [3] },
-
-
-        { question: "Was passiert, bei einer aktiven Anlage mit FI (0,5 A), wenn Sie L gegen Erde (PE) messen und den Druckknopf/die Druckknöpfe betätigen ?", answers: ["Der FI fliegt raus", "Das Messgerät vibriert und zeigt 230 V an", "Das Messgerät zeigt 0 V an", "Das Messgerät vibriert"], correct: [1] },
-
-
-        { question: "Was passiert, bei einer aktiven Anlage mit FI (0,03 A), wenn Sie L gegen Erde (PE) messen und den Druckknopf/die Druckknöpfe betätigen ?", answers: ["Der FI fliegt raus", "Das Messgerät vibriert und zeigt 230 V an", "Das Messgerät zeigt 0 V an", "Das Messgerät vibriert"], correct: [0] },
-
-
-        { question: "Welcher möglicher Fehler liegt vor, wenn Sie zwischen N und PE z.B. um die 50 V messen ?", answers: ["Die Phase L ist nicht da", "Das Messgerät ist defekt", "Eine N-Leiterunterbrechung", "Die Einspeisung des Netzbetreibers funktioniert nicht"], correct: [2] },
-
-
-        { question: "Welche Drehfeldrichtung muss netzseitig zur Verfügung gestellt werden ?", answers: ["mindestens ein 4-poliges Netz mit Rechtsdrehfeld", "mindestens ein 5-poliges Netz mit Linksdrehfeld", "mindestens ein 4-poliges Netz mit Linksdrehfeld", "mindestens ein 5-poliges Netz mit Rechtsdrehfeld"], correct: [0] },
-
+        { question: "Welche Drehfeldrichtung muss netzseitig zur Verfügung gestellt werden ?", answers: ["Rechtsdrehfeld", "Linksdrehfeld", "Entweder Links- oder Rechtsdrehfeld", "mindestens ein 5-poliges Netz mit Rechtsdrehfeld"], correct: [0] },
 
         { question: "Wie messe ich das Rechtsdrehfeld mit einem 2-poligen Spannungsprüfer ?", answers: ["Eine Messpitze in L1, die andere in L2", "Die Messpitze mit der Kennzeichnung 'L1' in L1, die andere in L2", "Die Messpitze mit der Kennzeichnung 'L1' in L3, die andere mit 'L2' in L1", "Eine Messpitze in L1, die andere in L3"], correct: [1, 2] },
 
-
         { question: "Welche Phasenfolge ergibt ein Rechtsdrehfeld ?", answers: ["L1  L2  L3", "L2  L1  L3", "L3  L2  L1", "L3  L1  L2"], correct: [0, 3] },
 
+        { question: "Welche Farbe hatte der Schutzleiter PE früher ?", answers: ["grün", "gelb", "rot", "grau"], correct: [2] },
 
-        { question: "Welche Farbe hatte früher der Schutzleiter PE ?", answers: ["grün", "gelb", "rot", "grau"], correct: [2] },
 
-
-        { question: "Welche Leiterfarben gelten für L1  L2 und L3 ?", answers: ["braun-schwarz-grau", "schwarz-braun-grau", "Normativ gibt es dafür keine explizite Zuordnung", "grau-schwarz-braun"], correct: [0] },
+        { question: "Welche Leiterfarben gelten für L1  L2 und L3 ?", answers: ["braun-schwarz-grau", "schwarz-braun-grau", "Normativ gibt es dafür keine explizite Zuordnung", "grau-schwarz-braun"], correct: [2] },
 
 
         { question: "Welche Leiterfarbe galt früher für den N-Leiter ?", answers: ["grau", "blau", "rot", "schwarz"], correct: [0] },
 
 
         { question: "Welcher Leiter wurde früher Nulleiter genannt ?", answers: ["Die Phase L", "Der Schutzleiter PE", "Der N Leiter", "Der kombinierte Leiter aus N und PE"], correct: [3] },
-
-
-        { question: "Spätestens wann muss eine Schutzeinrichtung im TN-S-Netz bei 230 V abschalten ?", answers: ["innerhalb von 400 ms", "innerhalb von 0,4 s", "nach von 30 ms", "innerhalb von 0,2s"], correct: [0, 1] },
-
-
-        { question: "Spätestens wann muss eine Schutzeinrichtung im TT-Netz bei 230 V abschalten ?", answers: ["innerhalb von 0,2 s", "nach 200 ms", "spätestens nach 0,02 s", "innerhalb von 0,2 s"], correct: [0, 3] },
-
-
-        { question: "Wie groß darf der maximale Differenzfehlerstrom für Personenschutz höchstens sein ?", answers: ["0,3 mA", "0,03 A", "300 mA", "30 mA"], correct: [1, 3] },
 
 
         { question: "Was ist das besondere an einen RCD Typ B ?", answers: ["Er kann auch glatte Gleichfehlerströme erfassen", "Ist träger als Typ A", "Gilt nicht für den Personenschutz", "Ist billiger als Typ A"], correct: [0] },
@@ -1366,22 +1172,37 @@ const questions = {
     Betriebsmittel: [
 
         { question: "Was bedeutet die Abkürzung FI?", answers: ["Fehlerstromschutzschalter", "Stromschutzschalter", "Fuse-Ampere-Device", "Fehlerspannungsschutzschalter"], correct: [0] },
+
         { question: "Was ist ein RCD?", answers: ["Ein Fehlerspannungsschutzschalter", "Ein Überspannungsfehlerschutzschalter", "Ein Fehlerstromschutzschalter", "Ein Widerstandsschutzschalter"], correct: [2] },
-        { question: "Welche Schutzeinrichtung ist für den Kurzschlussschutz zuständig?", answers: ["Ein LS-Schalter", "Ein Sicherungsautomat", "Ein Fehlerspannungsschutzschalter", "Ein Fehlerstromschutzschalter"], correct: [0] },
+
+        { question: "Welche Schutzeinrichtung ist für den Kurzschlussschutz zuständig?", answers: ["Ein LS-Schalter", "Ein Sicherungsautomat", "Ein Fehlerspannungsschutzschalter", "Ein Fehlerstromschutzschalter"], correct: [0, 1] },
+
         { question: "Löst eine Überstromschutzeinrichtung (ÜSE) auch bei Erdschluss aus?", answers: ["Ja, immer", "Nein, nie", "Bedingt ja, wenn der Erdschlusstrom die Höhe eines Überlast- bzw. Kurzschlusstromes hat", "Bedingt ja, wenn der Erdschlusstrom kleiner ist als der Überlast- bzw. Kurzschlusstrom"], correct: [2] },
-        { question: "Welche Aussage trifft auf LS-Schalter der Kategorie B zu?", answers: ["Es ist mindestens der 5-fache Sicherungsnennstrom notwendig, um den Kurzschlussfall sicher abzuschalten", "Ein B-Automat für 16 A benötigt somit maximal 80 A im Kurzschlussfall", "Es ist maximal der 5-fache Sicherungsnennstrom notwendig, um den Kurzschlussfall sicher abzuschalten", "Ein B-Automat für 16 A benötigt somit mindestens 80 A im Kurzschlussfall"], correct: [0, 1] },
-        { question: "Wie lauten die produktneutralen Bezeichnung für Neozed und Diazed?", answers: ["D0 und D", "D und D0", "NH", "HH"], correct: [0] },
-        { question: "Was bezeichnet die Abkürzung NH bei einer Sicherung?", answers: ["Niederspannungs-Hochleistungssicherung", "Niederstrom-Hochleistungssicherung", "Hochspannungssicherung", "Hochvoltsicherung"], correct: [0] },
-        { question: "Welche Gemeinsamkeiten haben LS-Schalter und Motorschutzschalter?", answers: ["Beide schützen vor Kurzschluss und Überlast", "Beide schützen vor Unterspannung und Überlast", "Beide schützen vor Überspannung und Kurzschluss", "Beide schützen vor Überlast und minimalem Kurzschluss"], correct: [0] },
-        { question: "Was ist der wesentliche Unterschied zwischen Motorschutzrelais und Motorschutzschalter ?", answers: ["Der Motorschutzschalter schützt gegen Überlast und Nennstrom", "Das Motorschutzrelais schützt nur gegen Überlast", "Das Motorschutzrelais schützt nur gegen Kurzschluss", "Beide sind ein und dasselbe, nur eine andere Bezeichnung"], correct: [1] },
+
+        { question: "Welche Aussage trifft auf LS-Schalter der Kategorie B zu?", answers: ["Es ist mindestens der 5-fache Sicherungsnennstrom notwendig, um den Kurzschlussfall sicher abzuschalten", "Ein B-Automat für 16 A benötigt maximal 80 A im Kurzschlussfall", "Es ist maximal der 5-fache Sicherungsnennstrom notwendig, um den Kurzschlussfall sicher abzuschalten", "Ein B-Automat für 16 A benötigt mindestens 80 A im Kurzschlussfall"], correct: [0, 3] },
+
+        { question: "Wie lauten die produktneutralen Bezeichnung für Neozed- und Diazed-Sicherungen?", answers: ["D0 und D", "D und D1", "NH", "HH"], correct: [0] },
+
+        { question: "Was bezeichnet die Abkürzung NH bei Sicherungen?", answers: ["Niederspannungs-Hochleistungssicherungen", "Niederstrom-Hochleistungssicherungen", "Hochspannungssicherungen", "Hochvoltsicherungen"], correct: 1 },
+
+        { question: "Welche Gemeinsamkeiten haben LS- und Motorschutzschalter?", answers: ["Beide schützen vor Kurzschluss und Überlast", "Beide schützen vor Unterspannung und Überlast", "Beide schützen vor Überspannung und Kurzschluss", "Beide schützen vor Überlast und Oberspannung"], correct: [0] },
+
+        { question: "Was ist der wesentliche Unterschied zwischen Motorschutzrelais und Motorschutzschalter ?", answers: ["Der Motorschutzschalter schützt gegen Überlast und Nennstrom", "Das Motorschutzrelais schützt nur gegen Überlast", "Das Motorschutzrelais schützt nur gegen Kurzschluss", "Beide sind ein und dasselbe, nur anders bezeichnet"], correct: [1] },
+
         { question: "Was ist der wesentliche Unterschied zwischen Kabel und Leitung?", answers: ["Leitungen dürfen nur unterirdisch verlegt werden", "Kabel dürfen nur oberirdisch verlegt werden", "Leitungen dürfen grundsätzlich nicht in Erde verlegt werden", "Kabel dürfen grundsätzlich nicht in Erde verlegt werden"], correct: [2] },
+
         { question: "Müssen feinst- und feindrähtige Leiter immer verzinnt werden?", answers: ["Ja, damit eine feste Verbindung entsteht", "Diese Leiterarten dürfen nicht (mehr) verzinnt werden", "Nur im Außenbereich ist diese Methode zulässig", "Im Innenbereich braucht nicht verzinnt werden"], correct: [1] },
+
         { question: "Dürfen fein- und feinstdrähtige Leiter auch ohne Aderendhülse verschraubt werden?", answers: ["Ja, wenn das Drehmoment nicht zu groß ist", "Ja, diese Methode ist immer noch zulässig", "Nein, definitiv nicht", "Wenn sie den gleichen Querschnitt besitzen, ja"], correct: [2] },
+
         { question: "Welche Schutzklassennummern gelten aktuell für elektrische Betriebsmittel?", answers: ["Schutzklassen 0, 1 und 2", "Schutzklassen A, B und C", "Schutzklassen 1, 2 und 3", "Schutzklassen 1, 2 und 4"], correct: [2] },
-        { question: "Bei welcher Schutzklasse muss ein PE angeschlossen werden?", answers: ["Bei Schutzklasse 3", "Bei Schutzklasse 1", "Bei Schutzklasse 2", "Bei jeder Schutzklasse"], correct: [1] },
+
         { question: "Welche Schutzklasse liegt bei Betriebsmittel mit Schukosteckern vor?", answers: ["Schutzklasse 2", "Schutzklasse 0", "Schutzklasse 3", "Schutzklasse 1"], correct: [3] },
+
         { question: "Was bedeutet das 'J' in der Bezeichnung: NYM-J 3x1,5<sup>2</sup> ?", answers: ["Es liegt ein Schutzleiter vor", "Es liegt kein PE vor", "Es liegt kein Schutzleiter vor", "Es liegt ein PE vor"], correct: [0, 3] },
+
         { question: "Ist das NYM ein Kabel oder eine Leitung?", answers: ["Eine Leitung", "Ein Kabel", "weder noch", "Wenn es im Außenbereich liegt, ein Kabel, sonst eine Leitung"], correct: [0] },
+
         { question: "Ist das NYY eine Leitung oder ein Kabel?", answers: ["Eine Leitung", "Ein Kabel", "weder noch", "Wenn es im Innenbereich liegt, ein Kabel, sonst eine Leitung"], correct: [1] },
 
     ],
