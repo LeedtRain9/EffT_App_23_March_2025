@@ -237,7 +237,7 @@ const questions = {
             "Ja",
             "Nein"
         ],
-        correct: 1
+        correct: 0
     },
 
     // Richtig-/Falsch-Fragen
