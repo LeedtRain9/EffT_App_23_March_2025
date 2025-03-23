@@ -455,15 +455,8 @@ const questions = {
         "type": "textWithImage",
         "question": "Was passiert mit dem Leiterwiderstand, wenn die Umgebungstemperatur steigt ?",
         "image": "Bilder Elektrotechnik 5/bild2.jpg",
-        "answers": [
-            "Die Umgebungstemperatur hat keinen Einfluss auf den Leiterwiderstand",
-            "Der Leiterwiderstand wird größer",
-            "Die Umgebungstemperatur hat einen Einfluss auf den Leiterwiderstand",
-            "Der Leiterwiderstand wird kleiner"
-        ],
-        "correct": [1, 2]
-    },
-
+        "answers": ["Der Leiterwiderstand wird größer", "Die Umgebungstemperatur hat keinen Einfluss auf den Leiterwiderstand", "Der Leiterwiderstand wird kleiner"],
+        "correct": [0] },
 ],
 
 
