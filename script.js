@@ -53,7 +53,7 @@ const questions = {
         type: "textWithImage",
         question: "Welche Ladung besitzt das Neutron ?",
         image: ["Bilder Elektrotechnik 1/bild1a.jpg"],
-        answers: ["eine positive", "eine neutral", "mehr positive als negative", "negativ"],
+        answers: ["eine positive", "eine neutrale", "mehr positive als negative", "negativ"],
         correct: [1]
     },
     {
