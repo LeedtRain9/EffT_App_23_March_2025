@@ -503,7 +503,7 @@ const questions = {
     {
         "type": "image",
         "question": "Welche der folgenden Komponenten können als Gleichspannungsquelle dienen ? Klicken Sie auf das entsprechende Bild",
-        "image": ["Bilder Elektrotechnik 6/bild3.jpg"],
+        "images": ["Bilder Elektrotechnik 6/bild3.jpg", "Bilder Elektrotechnik 6/bild4.jpg", "Bilder Elektrotechnik 6/bild5.jpg"],
         "correct": [0, 1]
     },
     {
