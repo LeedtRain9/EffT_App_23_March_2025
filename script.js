@@ -590,7 +590,7 @@ const questions = {
         question: "Es liegt ein 400 V-Netz vor. Wie hoch ist die Spannung zwischen allen Außenleitern (Phasen) zu PE ?",
         image: "Bilder Elektrotechnik 7/bild5a.jpg",
         answers: ["230 V", "400 V", "380 V", "220 V"],
-        correct: [2]
+        correct: [0]
     },
     {
         type: "textWithImage",
