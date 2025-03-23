@@ -477,7 +477,7 @@ const questions = {
     {
         "type": "textWithImage",
         "question": "Welche Aussage ist richtig ?",
-        "image": "Bilder Elektrotechnik 6/bild2.jpg",
+        "image": "Bilder Querbeet/bild2.jpg",
         "answers": [
             "Der Innenwiderstand eines Multimeters ist im V-Bereich kleiner, als im A-Bereich.",
             "Der Innenwiderstand eines Multimeters ist im V- und A-Bereich unterschiedlich.",
