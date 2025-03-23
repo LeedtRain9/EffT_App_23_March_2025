@@ -394,7 +394,7 @@ const questions = {
         question: "Welche Aussage stimmt in Bezug auf einer Parallelschaltung ?",
         image: "Bilder Elektrotechnik 4/bild6.jpg",
         answers: ["Am kleinsten Widerstand wird die größte Leistung umgesetzt", "Am größten Widerstand wird die kleinste Leistung umgesetzt", "Am größten Widerstand wird die größte Leistung umgesetzt"],
-        correct: [3]
+        correct: [2]
     },
     {
         "type": "textWithImage",
