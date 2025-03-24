@@ -2842,6 +2842,7 @@ const questions = {
         "answers": ["Aktoren", "Resonatoren", "Transistoren"],
         "correct": [0]
     },
+
 ],
 
 "Steuerungstechnik 1": [
@@ -2930,6 +2931,114 @@ const questions = {
         "answers": ["Der Motor läuft in beiden Fällen nur links herum", "Beim Einschalten gibt es einen Phasenschluss", "Der Motor läuft in beiden Fällen nur rechts herum"],
         "correct": [2]
     },
+
+],
+
+"Elektronik": [
+
+  {
+    type: "textWithImage",
+    question: "Wie heißt dieses elektronische Bauteil ?",
+    image: "Bilder Elektronik/bild1.jpg",
+    answers: ["Kondensator", "Widerstand", "Diode", "Spule"],
+    correct: [2]
+  },
+  {
+    type: "textWithImage",
+    question: "Welches Bauteil wird hier dargestellt?",
+     image: "Bilder Elektronik/bild2.jpg",
+    answers: ["Spule", "Widerstand", "Kondensator", "Diode"],
+    correct: [0]
+  },
+  {
+    type: "textWithImage",
+    question: "Welche Funktion hat dieses Bauteil in der Schaltung ?",
+    image: "Bilder Elektronik/bild3.jpg",
+    answers: [
+      "Es reduziert die Spannung für die LED",
+      "Es verstärkt das Signal",
+      "Es speichert elektrische Energie",
+      "Es blockiert Gleichspannung"
+    ],
+    correct: [0]
+  },
+  {
+    type: "textWithImage",
+    question: "Wie wird ein Schaltkreis mit einer Diode beeinflusst ?",
+    image: "Bilder Elektronik/bild4.jpg",
+    answers: [
+      "Der Strom fließt in beide Richtungen",
+      "Der Strom wird verstärkt",
+      "Der Strom kann nur in eine Richtung fließen",
+      "Die Spannung wird erhöht"
+    ],
+    correct: [2]
+  },
+  {
+    type: "textWithImage",
+    question: "Welches Bauteil ist hier zu sehen ?",
+    image: "Bilder Elektronik/bild5.jpg",
+    answers: ["Widerstand", "ELKO", "Spule", "Diode"],
+    correct: [1]
+  },
+  {
+    type: "textWithImage",
+    question: "Wie verhält sich ein Kondensator im Gleichstromkreis im Einschaltmoment ?",
+    image: "Bilder Querbeet/bild5.jpg",
+    answers: ["Er wirkt wie ein Kurzschluss", "Er wirkt wie eine Unterbrechnung", "Er verhält sich wie ein Widerstand R"],
+    correct: [0]
+  },
+  {
+    type: "textWithImage",
+    question: "Wie verhält sich ein Kondensator im Gleichstromkreis im Ausschaltmoment ?",
+    image: "Bilder Querbeet/bild5.jpg",
+    answers: ["Er wirkt wie eine Unterbrechnung", "Er wirkt wie ein Kurzschluss", "Er verhält sich wie ein Widerstand R"],
+    correct: [0]
+  },
+  {
+    type: "textWithImage",
+    question: "Was passiert, wenn ein Leuchtmittel (oder LED) in Reihe zu einem Kondensator im DC-Kreis geschaltet wird ?",
+    image: "Bilder Querbeet/bild5.jpg",
+    answers: ["Nichts. Die LED bleibt dunkel", "Die LED ist zunächst dunkel und beginnt allmählich zu leuchten", "Die LED hat zunächst maximale Helligkeit und wird allmählich dunkel"],
+    correct: [2]
+  },
+  {
+    type: "textWithImage",
+    question: "Was passiert, wenn ein Leuchtmittel (oder LED) parallel zu einem Kondensator im DC-Kreis geschaltet wird ?",
+    image: "Bilder Querbeet/bild5.jpg",
+    answers: ["Nichts. Die LED bleibt hell", "Die LED ist zunächst dunkel und beginnt allmählich zu leuchten", "Die LED hat zunächst maximale Helligkeit und wird allmählich dunkel"],
+    correct: [1]
+  },
+ {
+    type: "textWithImage",
+    question: "Wie verhält sich eine Spule im Gleichstromkreis im Einschaltmoment ?",
+    image: "Bilder Querbeet/bild5.jpg",
+    answers: ["Sie wirkt wie ein Kurzschluss", "Sie wirkt wie eine Unterbrechnung", "Er verhält sich wie ein Kondensator C"],
+    correct: [1]
+  },
+ {
+    type: "textWithImage",
+    question: "Wie verhält sich eine Spule im Gleichstromkreis im Ausschaltmoment ?",
+    image: "Bilder Querbeet/bild5.jpg",
+    answers: ["Sie wirkt wie ein Kurzschluss", "Sie wirkt wie eine Unterbrechnung", "Er verhält sich wie ein Kondensator C"],
+    correct: [0]
+  },
+  {
+    type: "textWithImage",
+    question: "Was passiert, wenn ein Leuchtmittel (oder LED) in Reihe zu einer Spule im DC-Kreis geschaltet wird ?",
+    image: "Bilder Querbeet/bild5.jpg",
+    answers: ["Nichts. Die LED bleibt dunkel", "Die LED ist zunächst dunkel und beginnt allmählich zu leuchten", "Die LED hat zunächst maximale Helligkeit und wird allmählich dunkel"],
+    correct: [1]
+  },
+  {
+    type: "textWithImage",
+    question: "Was passiert, wenn ein Leuchtmittel (oder LED) parallel zu Spule im DC-Kreis geschaltet wird ?",
+    image: "Bilder Querbeet/bild5.jpg",
+    answers: ["Nichts. Die LED bleibt hell", "Die LED ist zunächst dunkel und beginnt allmählich zu leuchten", "Die LED hat zunächst maximale Helligkeit und wird allmählich dunkel"],
+    correct: [2]
+  },
+
+
 ]
 
 };
