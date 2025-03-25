@@ -243,7 +243,7 @@ const questions = {
         type: "textWithImage",
         question: "Welche Aussage zum Wirkungsgrad z.B. eines Drehstrommotors ist richtig ?",
         image: "Bilder Elektrotechnik 3/bild2.jpg",        
-        answers: ["Er ist immer 0", "Er ist kleiner 0", "Er kann sogar großer 0 sein"],
+        answers: ["Er ist immer 1", "Er ist kleiner 1", "Er kann sogar großer 1 sein"],
         correct: [1]
     },
     {
@@ -253,13 +253,20 @@ const questions = {
         answers: ["Blindleistung", "Nulleistung", "Scheinleistung", "Kaltleistung"],
         correct: [0, 2]
     },
-{
+    {
         type: "textWithImage",
         question: "Welche Einheit hat der Wirkungsgrad ?",
         image: "Bilder Elektrotechnik 3/bild2.jpg",        
         answers: ["Nm", "W", "keine", "kWh"],
         correct: [2]
     },
+          {
+  	"type": "textWithImage",
+  	"question": "Ein 100-W-Glühlampe läuft 10 Stunden. Wie viel Energie verbraucht sie in kWh?",
+  	"image": "Bilder Elektrotechnik 3/bild7.jpg",
+  	"answers": ["0,1 kWh", "1 kWh", "10 kWh", "100 kWh"],
+ 	"correct": [1]
+}
 ],
 
 
@@ -294,6 +301,27 @@ const questions = {
         answers: ["H", "Vs", "F", "As"],
         correct: [2]
     },
+         {
+  	"type": "textWithImage",
+  	"question": "Welches Bauteil blockiert Gleichstrom, lässt aber Wechselstrom passieren?",
+  	"image": "Bilder Querbeet/bild5.jpg",
+  	"answers": ["Widerstand", "Kondensator", "Diode", "Spule"],
+  	"correct":  [1]
+    },
+{
+  "type": "textWithImage",
+  "question": "Was passiert mit der Gesamtkapazität C, wenn zwei Kondensatoren C1 und C2 in Reihe geschaltet werden?",
+  "image": "Bilder Querbeet/bild5.jpg",
+  "answers": ["Sie vergrößtert sich", "Sie verringert sich", "Sie bleibt gleich", "Sie wird null"],
+  "correct":  [1]
+},
+{
+  "type": "textWithImage",
+  "question": "Was passiert mit der Gesamtkapazität C, wenn zwei Kondensatoren C1 und C2 parallel geschaltet werden?",
+  "image": "Bilder Querbeet/bild5.jpg",
+  "answers": ["Sie verringert sich", "Sie vergrößert sich", "Sie bleibt gleich", "Sie wird null"],
+  "correct":  [1]
+},
     {
         type: "textWithImage",
         question: "In welcher Einheit wird die Induktivität L angegeben ?",
@@ -961,7 +989,7 @@ const questions = {
         "correct": [0, 3]
     },    {
         "type": "textWithImage",
-        "question": "Woran ist ein RCD äußerlich vom weiten gut zu erkennen ?",
+        "question": "Woran ist ein RCD äußerlich vom Weiten gut zu erkennen ?",
         "image": "Bilder Stromgefahr 2/bild4.jpg",
         "answers": ["An der Test-Taste", "Am Hebel", "An der Beschriftung", "An der Breite"],
         "correct": [0]
@@ -996,14 +1024,14 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Ein Wechselstrom von 0,5 mA durch den menschlichen Körper ist tödlich.",
+        "question": "Ein Wechselstrom von 0,5 mA durch den menschlichen Körper ist grundsätzlich tödlich",
         "image": "Bilder Stromgefahr 1/bild1.jpg",
         "answers": ["Richtig", "Falsch"],
         "correct": [1]
     },
     {
         "type": "textWithImage",
-        "question": "Der Körperwiderstand variiert, abhängig von Faktoren wie Hautfeuchtigkeit und -dicke.",
+        "question": "Der Körperwiderstand variiert, abhängig von Faktoren wie Hautfeuchtigkeit und -dicke",
         "image": "Bilder Elektrotechnik 7/bild2.jpg",
         "answers": ["Richtig", "Falsch"],
         "correct": [0]
@@ -1095,7 +1123,14 @@ const questions = {
         "image": "Bilder Schutzmaßnahmen 1/bild3.jpg",
         "answers": ["Differenzen zwischen eingehenden und ausgehenden Strömen", "Kurzschlüsse", "Überspannungen", "Unterspannungen"],
         "correct": [0]
-    }
+    },
+    {
+        "type": "textWithImage",
+        "question": "Was bedeutet die Abkürzung ÜSE bezogen auf den Strom ?",
+        "image": "Bilder Querbeet/bild5.jpg",
+        "answers": ["Überschutzeinrichtung", "Überstromschutzeinrichtung", "Überspannungsschutzeinrichtung"],
+        "correct": [1]
+    },
 ],
 
 
@@ -1119,6 +1154,20 @@ const questions = {
         "question": "Funktioniert der FI auch eindeutig bei 'Klassischer Nullung' ?",
         "image": "Bilder Querbeet/bild5.jpg",
         "answers": ["Ja", "Nein"],
+        "correct": [1]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Welcher Strom fließt betriebsmäßig über den PEN-Leiter ?",
+        "image": "Bilder Querbeet/bild5.jpg",
+        "answers": ["Der Rückstrom", "Rück- als auch Fehlerstrom", "Fehlerstrom"],
+        "correct": [1]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Welcher Strom fließt betriebsmäßig über den PE-Leiter ?",
+        "image": "Bilder Querbeet/bild5.jpg",
+        "answers": ["Der Rückstrom", "betriebsmäßig fließt kein Strom durch PE", "Fehlerstrom"],
         "correct": [1]
     },
     {
