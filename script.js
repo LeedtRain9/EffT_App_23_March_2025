@@ -3853,23 +3853,6 @@ function zeigeFehlerbericht() {
     document.body.appendChild(zurueckButton);
 }
 
-function blinkAllAnswers() {
-    const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
-    const imageButtons = document.querySelectorAll('.answer-img');
-    if (imageButtons.length > 0) {
-        blinkAllImages();
-    } else {
-        answerButtons.forEach(button => {
-            button.classList.add('blinking');
-        });
-
-        setTimeout(() => {
-            answerButtons.forEach(button => {
-                button.classList.remove('blinking');
-            });
-        }, 4000);
-    }
-}
 
 function blinkAllImages() {
     const answerButtons = document.querySelectorAll('.answer-img');
@@ -3894,21 +3877,19 @@ function blinkAllAnswers() {
     if (nextButton) {
         nextButton.disabled = true;
     }
-
     const answerButtons = document.querySelectorAll('.answer-btn, .answer-img');
     const imageButtons = document.querySelectorAll('.answer-img');
+
     if (imageButtons.length > 0) {
         blinkAllImages();
     } else {
         answerButtons.forEach(button => {
             button.classList.add('blinking');
         });
-
         setTimeout(() => {
             answerButtons.forEach(button => {
                 button.classList.remove('blinking');
             });
-            // Re-enable the "Weiter" button after blinking
             if (nextButton) {
                 nextButton.disabled = false;
             }
