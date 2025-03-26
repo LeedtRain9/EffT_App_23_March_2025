@@ -440,8 +440,7 @@ const questions = {
             "In einer Reihenschaltung ist der Gesamtwiderstand stets kleiner, als der größte Teilwiderstand",
             "In einer Reihenschaltung fließt durch den kleinsten Teilwiderstand der größte Teilstrom",
             "In einer Reihenschaltung ist der Gesamtwiderstand stets größer, als der größte Teilwiderstand",
-            "Durch alle Teilwiderstände fließt der gleiche Strom I"
-        ],
+            "Durch alle Teilwiderstände fließt der gleiche Strom I"],
         "correct": [2, 3]
     },
     {
@@ -857,7 +856,7 @@ const questions = {
         "image": "Bilder Querbeet/bild1.jpg",
         "answers": [".. gibt's kein Strom", "... bleibt der Olaf gern at home"],
         "correct": [0]
-    },
+    }
 ],
 
 "Stromgefahr 1": [
