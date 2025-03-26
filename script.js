@@ -1,5 +1,734 @@
 const questions = {
 
+"Elektrotechnik 1":[
+    {
+        type: "textWithImage",
+        question: "Wie ist das Elektron geladen ?",
+        image: ["Bilder Elektrotechnik 1/bild1a.jpg"],
+        answers: ["positiv", "gar nicht", "neutral", "negativ"],
+        correct: [3]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Ladungen sind für den Stromfluss in einem metallischen Leiter verantwortlich ?",
+        image: ["Bilder Elektrotechnik 1/bild2.jpg"],
+        answers: ["Neutronen", "Elektronen", "Protonen", "Positronen"],
+        correct: [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Was ist die treibende Kraft in einem Stromkreis ?",
+        image: ["Bilder Elektrotechnik 1/bild5.jpg"],
+        answers: ["Die Leistung P", "Die Ladung Q", "Der Widerstand R", "Die Spannung U"],
+        correct: [3]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Aussagen sind richtig ?",
+        image: ["Bilder Querbeet/bild5.jpg"],
+        answers: ["Eine Spannung liegt an einem Widerstand an", "Ein Strom liegt an einem Widerstand an", "Ein Strom ließt an einem Widerstand an", "Ein Strom fließt durch einen Widerstand durch"], correct: [0, 3]
+    },
+    {
+        type: "textWithImage",
+        question: "Aus welchen drei grundlegenden Elementen besteht ein Stromkreis ?",
+        image: "Bilder Elektrotechnik 1/bild9.jpg",
+        answers: ["Spannungsquelle", "Leiter", "Stromzähler", "Verbraucher"],
+        correct: [0, 1, 3]
+    },
+    {
+        type: "textWithImage",
+        question: "Für welche Spannungsart gilt die Abkürzung AC ?",
+        image: "Bilder Elektrotechnik 1/bild10.jpg",
+        answers: ["Wechselspannung", "Dreieckspannung", "Gleichspannung", "Rechteckspannung"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Liegt hier ein AC- oder DC-System vor ?",
+        image: "Bilder Elektrotechnik 3/bild5.jpg",
+        answers: ["Ein DC-System", "Ein AC-System"],
+        correct: [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Ladung besitzt das Neutron ?",
+        image: ["Bilder Elektrotechnik 1/bild1a.jpg"],
+        answers: ["eine positive", "eine neutrale", "mehr positive als negative", "negativ"],
+        correct: [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Für welche Spannungsart gilt die Abkürzung DC ?",
+        image: "Bilder Elektrotechnik 1/bild11.jpg",
+        answers: ["Wechselspannung", "Dreieckspannung", "Gleichspannung", "Rechteckspannung"],
+        correct: [2]
+    },
+    {
+        type: "textWithImage",
+        question: "Welchen Formelbuchstaben hat der elektrische Strom ?",
+        image: ["Bilder Elektrotechnik 1/bild7a.jpg"],
+        answers: ["R", "U", "A", "I"],
+        correct: [3]
+    },
+    {
+        type: "textWithImage",
+        question: "Welchen Formelbuchstaben hat die elektrische Spannung ?",
+        image: ["Bilder Elektrotechnik 1/bild7a.jpg"],
+        answers: ["I", "U", "Ws", "Nm"],
+        correct: [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Wie ist das Proton geladen ?",
+        image: ["Bilder Elektrotechnik 1/bild1a.jpg"],
+        answers: ["positiv", "gar nicht", "neutral", "negativ"],
+        correct: [0]
+    },
+],
+
+"Elektrotechnik 2": [
+
+    {
+        type: "textWithImage",
+        question: "Welchen Formelbuchstaben hat der elektrische Widerstand ?",
+        image: "Bilder Elektrotechnik 1/bild7a.jpg",
+        answers: ["P", "A", "R", "VA"],
+        correct: [2]
+    },
+    {
+        type: "textWithImage",
+        question: "Wie bezeichnet man den Widerstand R im Gleichstromkreis ?",
+        image: "Bilder Elektrotechnik 2/bild1.jpg",        
+        answers: ["Gleichstromwiderstand", "Blindwiderstand", "Kaltwiderstand", "Heißwiderstand"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Wie nennt man den Widerstand R im Wechselstromkreis ?",
+        image: "Bilder Querbeet/bild5.jpg",        
+        answers: ["Scheinwiderstand", "Blindwiderstand", "Wirkwiderstand", "Hellwiderstand"],
+        correct: [2]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Um welche Bauteile handelt es sich im Vordergrund ?",
+        "image": "Bilder Elektrotechnik 2/bild2.jpg",
+        "answers": ["Ohmsche Widerstände", "Wirkwiderstände", "Kapazitive Widerstände", "Induktive Widerstände"],
+        "correct": [0, 1]
+    },
+    {
+        type: "textWithImage",
+        question: "Welchen Formelbuchstaben hat die elektrische Leistung im Gleichstromkreis ?",
+        image: "Bilder Elektrotechnik 1/bild8a.jpg",        
+        answers: ["P", "C", "L", "W"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Mit welchen Formeln lässt sich die Leistung im DC-System berechnen ?",
+        image: "Bilder Elektrotechnik 1/bild8a.jpg",        
+        answers: ["P = U * I", "P = R / I", "U = R * I", "I = U / R"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Wie bezeichnet man die Leistung P im Gleichstromkreis ?",
+        image: "Bilder Querbeet/bild5.jpg",        
+        answers: ["Widerstandsleistung", "Momentanleistung", "Gleichstromleistung", "Spitzenleistung"],
+        correct: [2]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Einheit hat die elektrische Leistung im DC-System ?",
+        image: "Bilder Elektrotechnik 1/bild8a.jpg",        
+        answers: ["I", "U", "W", "R"],
+        correct: [2]
+    },
+    {
+        type: "textWithImage",
+        question: "Welchen Formelbuchstaben hat die elektrische Arbeit ?",
+        image: "Bilder Querbeet/bild4.jpg",       
+        answers: ["Nm", "Ws", "W", "F"],
+        correct: [2]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Einheit hat die elektrische Spannung ?",
+        image: "Bilder Elektrotechnik 1/bild3a.jpg",        
+        answers: ["I", "U", "Ws", "V"],
+        correct: [3]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Einheit hat der elektrische Strom ?",
+        image: "Bilder Elektrotechnik 1/bild3a.jpg",        
+        answers: ["A", "U", "W", "I"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Wieviel Ampere entsprechen 500 mA ?",
+        image: "Bilder Querbeet/bild5.jpg",        
+        answers: ["5", "0,5", "0,05", "50"],
+        correct: [1]
+    }
+],
+
+"Elektrotechnik 3": [
+    
+{
+        type: "textWithImage",
+        question: "Welche Einheit hat der elektrische Widerstand R ?",
+        image: "Bilder Elektrotechnik 1/bild3a.jpg",        
+        answers: ["W", "VA", "J", "Ohm"],
+        correct: [3]
+    },
+    {
+        type: "textWithImage",
+        question: "Ein Widerstand hat den Wert 1 kOhm. Wie viel Ohm sind das ?",
+        image: "Bilder Elektrotechnik 3/bild1.jpg",
+        answers: ["0,001", "100", "1000", "0,1"],
+        correct: [2]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Formeln geben das Ohmsche Gesetz wieder ?",
+        image: "Bilder Querbeet/bild5.jpg",        
+        answers: ["R = I / U", "U = R / I", "U = R * I", "I = U / R"],
+        correct: [2, 3]
+    },
+    {
+        type: "textWithImage",
+        question: "Ein Widerstand von 100 Ohm liegt an 60 V. Wie groß ist der Strom ?",
+        image: "Bilder Elektrotechnik 3/bild1.jpg",
+        answers: ["6,0 A", "0,6 A", "600 mA", "6 mA"],
+        correct: [1, 2]
+    },
+    {
+        type: "textWithImage",
+        question: "Eine Heizwendel (U = 230 V) hat einen Widerstandswert von 22 Ω. Würde eine 16 A-Sicherung zur Absicherung ausreichen, wenn nur die Höhe des Betriebsstromes betrachtet wird ?",
+        image: "Bilder Elektrotechnik 3/bild6.jpg",
+        answers: ["Nein", "Ja"],
+        correct: [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Durch einen Widerstand von 150 Ohm fließen 70 mA. Wie groß ist die angelegte Spannung ?",
+        image: "Bilder Elektrotechnik 3/bild1.jpg",
+        answers: ["1,5 V", "100,5 V", "10,5 V", "10500 mV"],
+        correct: [2, 3]
+    },
+    {
+        type: "textWithImage",
+        question: "Wie groß ist P bei 230 V und 6 A ?",
+        image: "Bilder Elektrotechnik 3/bild1.jpg",
+        answers: ["1,380 W", "1380 Ws", "1380 W", "1,38 kW"],
+        correct: [2, 3]
+    },
+    {
+        type: "textWithImage",
+        question: "Wie nennt man das Verhältnis zwischen mechanischer zur elektrischen Leistung ?",
+        image: "Bilder Elektrotechnik 3/bild2.jpg",
+        answers: ["Wirkungsgrad", "Wirtschaftsgrad", "Windungsgrad", "Wellengrad"],
+        correct: [0]
+    },
+{
+        type: "textWithImage",
+        question: "Welche Aussage zum Wirkungsgrad z.B. eines Drehstrommotors ist richtig ?",
+        image: "Bilder Elektrotechnik 3/bild2.jpg",        
+        answers: ["Er ist immer 1", "Er ist kleiner 1", "Er kann sogar großer 1 sein"],
+        correct: [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Einheit hat der Wirkungsgrad ?",
+        image: "Bilder Elektrotechnik 3/bild2.jpg",        
+        answers: ["Nm", "W", "keine", "kWh"],
+        correct: [2]
+    },
+          {
+  	"type": "textWithImage",
+  	"question": "Ein 100-W-Glühlampe läuft 10 Stunden. Wie viel Energie verbraucht sie in kWh?",
+  	"image": "Bilder Elektrotechnik 3/bild7.jpg",
+  	"answers": ["0,1 kWh", "1 kWh", "10 kWh", "100 kWh"],
+ 	"correct": [1]
+}
+],
+
+
+"Elektrotechnik 4": [
+   
+
+    {
+        type: "textWithImage",
+        question: "Wie muß ein Strommessgerät im Stromkreis eingebaut werden ?",
+        image: "Bilder Elektrotechnik 4/bild3.jpg",
+        answers: ["In Reihe zum Messobjekt", "Parallel zum Messobjekt", "Egal", "Sowohl in Reihe, als auch parallel zum Messobjekt"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Wie muß ein Spannungsmessgerät im Stromkreis eingebaut werden ?",
+        image: "Bilder Elektrotechnik 4/bild4.jpg",
+        answers: ["In Reihe zum Messobjekt", "Parallel zum Messobjekt", "Egal", "Sowohl in Reihe, als auch parallel zum Messobjekt"],
+        correct: [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Wie wird die Reihenschaltung noch bezeichnet ?",
+        image: "Bilder Elektrotechnik 4/bild5.jpg",
+        answers: ["Stromteiler", "Spannungsteiler", "Stromreduzierschaltung", "Spannungsreduzierschaltung"],
+        correct: [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Größe ist die gemeinsame Größe in einer Reihenschaltung ?",
+        image: "Bilder Elektrotechnik 4/bild5.jpg",
+        answers: ["Arbeit W", "Spannung U", "Leistung P", "Strom I"],
+        correct: [3]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Aussage stimmt in Bezug auf einer Reihenschaltung ?",
+        image: "Bilder Elektrotechnik 4/bild5.jpg",
+        answers: ["Am kleinsten Widerstand fällt die größte Spannung ab", "Am größten Widerstand fällt die kleinste Spannung ab", "Durch den kleinsten Widerstand fließt der größte Strom", "Am größten Widerstand fällt die größte Spannung ab"],
+        correct: [3]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Aussage stimmt in Bezug auf einer Reihenschaltung ?",
+        image: "Bilder Elektrotechnik 4/bild5.jpg",
+        answers: ["Am kleinsten Widerstand wird die größte Leistung umgesetzt", "Am größten Widerstand wird die kleinste Leistung umgesetzt", "Am größten Widerstand wird die größte Leistung umgesetzt"],
+        correct: [2]
+    },
+    {
+        type: "textWithImage",
+        question: "Mehrere Widerstände mit bekannten Werten sind in Reihe geschaltet. Wie berechnet man den Gesamtwiderstand ?",
+        image: "Bilder Querbeet/bild4.jpg",
+        answers: ["Durch Addition der Kehrwerte der Teilwiderstände", "Durch Multiplikation der Teilwiderstände", "Durch Addition der Teilwiderstände"],
+        correct: [2]
+    }
+],
+
+
+"Elektrotechnik 5":[
+    {
+        "type": "textWithImage",
+        "question": "Was passiert, wenn mehrere Widerstände in Reihe geschaltet werden ?",
+        "image": "Bilder Elektrotechnik 4/bild5.jpg",
+        "answers": ["Der Gesamtwiderstand sinkt", "Bei konstanter Spannung U sinkt der Strom", "Der Gesamtwiderstand ändert sich nicht", "Bei konstanter Spannung steigt der Strom"],
+        "correct": [1]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Welche Größe ist die gemeinsame Größe in einer Parallelschaltung ?",
+        "image": "Bilder Elektrotechnik 4/bild6.jpg",
+        "answers": ["Spannung U", "Strom I", "Arbeit W", "Leistung P"],
+        "correct": [0]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Wie wird die Parallelschaltung noch bezeichnet ?",
+        "image": "Bilder Elektrotechnik 4/bild6.jpg",
+        "answers": ["Spannungsreduzierschaltung", "Spannungsteiler", "Stromreduzierschaltung", "Stromteiler"],
+        "correct": [3]
+    },
+    {
+        type: "textWithImage",
+        question: "Mehrere Widerstände mit bekannten Werten werden parallel geschaltet. Wie berechnet man den Gesamtwiderstand ?",
+        image: "Bilder Querbeet/bild5.jpg",
+        answers: ["Durch den Kehrwert der vorherigen Addition der Kehrwerte der Teilwiderstände", "Durch Multiplikation der Teilwiderstände", "Durch Addition der Teilwiderstände"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Aussage stimmt in Bezug auf einer Parallelschaltung ?",
+        image: "Bilder Elektrotechnik 4/bild6.jpg",
+        answers: ["Am kleinsten Widerstand fällt die größte Spannung ab", "Am größten Widerstand fällt die kleinste Spannung ab", "Durch den kleinsten Widerstand fließt der größte Strom", "Am größten Widerstand fällt die größte Spannung ab"],
+        correct: [2]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Aussage stimmt in Bezug auf einer Parallelschaltung ?",
+        image: "Bilder Elektrotechnik 4/bild6.jpg",
+        answers: ["Am kleinsten Widerstand wird die größte Leistung umgesetzt", "Am größten Widerstand wird die kleinste Leistung umgesetzt", "Am größten Widerstand wird die größte Leistung umgesetzt"],
+        correct: [2]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Was passiert, wenn mehrere Widerstände parallel geschaltet werden ?",
+        "image": "Bilder Elektrotechnik 4/bild6.jpg",
+        "answers": ["Der Gesamtwiderstand R steigt", "Bei konstanter Spannung U sinkt der Strom I", "Der Gesamtwiderstand ändert sich nicht", "Bei konstanter Spannung U steigt der Strom I"],
+        "correct": [3]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Welche Aussage ist richtig ?",
+        "image": "Bilder Elektrotechnik 4/bild5.jpg",
+        "answers": [
+            "In einer Reihenschaltung ist der Gesamtwiderstand stets kleiner, als der größte Teilwiderstand",
+            "In einer Reihenschaltung fließt durch den kleinsten Teilwiderstand der größte Teilstrom",
+            "In einer Reihenschaltung ist der Gesamtwiderstand stets größer, als der größte Teilwiderstand",
+            "Durch alle Teilwiderstände fließt der gleiche Strom I"],
+        "correct": [2, 3]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Welche Aussage ist richtig ?",
+        "image": "Bilder Elektrotechnik 4/bild6.jpg",
+        "answers": [
+            "In einer Parallelschaltung steigt der Gesamtwiderstand mit steigender Anzahl an Teilwiderständen",
+            "In einer Parallelschaltung sinkt der Gesamtwiderstand mit kleiner werdenden Anzahl an Teilwiderständen",
+            "In einer Parallelschaltung sinkt der Gesamtwiderstand mit steigender Anzahl an Teilwiderständen",
+            "In einer Parallelschaltung steigt der Gesamtwiderstand mit kleiner werdender Anzahl an Teilwiderständen"
+        ],
+        "correct": [2, 3]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Welche Aussage ist falsch ?",
+        "image": "Bilder Elektrotechnik 4/bild6.jpg",
+        "answers": [
+            "In einer Parallelschaltung ist der Gesamtwiderstand stets kleiner, als der kleinste Teilwiderstand",
+            "In einer Parallelschaltung fließt durch den größten Teilwiderstand der kleinste Teilstrom",
+            "In einer Parallelschaltung ist der Gesamtwiderstand stets größer, als der kleinste Teilwiderstand",
+            "Alle Teilwiderstände liegen an der selben Gesamtspannung U"
+        ],
+        "correct": [2]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Steigt der Widerstandswert eines Leiters, wenn der Querschnitt größer gewählt wird ?",
+        "image": "Bilder Elektrotechnik 5/bild1a.jpg",
+        "answers": [
+            "Nein, der Leiterwiderstand wird kleiner",
+            "Ja, der Widerstandswert wird größer",
+            "Wenn der Querschnitt sich nur um eine Stufe vergrößert, ändert sich der Wert nicht",
+            "Wenn der Querschnitt sich nur um eine Stufe verringert, ändert sich der Wert nicht"
+        ],
+        "correct": [0]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Was passiert mit dem Leiterwiderstand, wenn die Umgebungstemperatur steigt ?",
+        "image": "Bilder Elektrotechnik 5/bild2.jpg",
+        "answers": ["Der Leiterwiderstand wird größer", "Die Umgebungstemperatur hat keinen Einfluss auf den Leiterwiderstand", "Der Leiterwiderstand wird kleiner"],
+        "correct": [0] },
+],
+
+
+"Elektrotechnik 6":  [
+   
+    {
+        "type": "textWithImage",
+        "question": "Welche Gefahr besteht bei fehlerhaften Verbindungen ?",
+        "image": "Bilder Elektrotechnik 6/bild1.jpg",
+        "answers": [
+            "Der Übergangswiderstand als auch die Temperatur sinken - Brandgefahr!",
+            "Der Übergangswiderstand sinkt und die Temperatur steigt - Brandgefahr!",
+            "Der Übergangswiderstand steigt und die Temperatur sinkt - Brandgefahr!",
+            "Der Übergangswiderstand als auch die Temperatur steigen - Brandgefahr!"
+        ],
+        "correct": [3]
+    },
+
+    {
+        "type": "textWithImage",
+        "question": "Welche Geräte werden verwendet, um Spannungen zu messen ?",
+        "image": "Bilder Querbeet/bild5.jpg",
+        "answers": ["Voltmeter", "Strommesser", "Amperemeter", "Spannungsmesser"],
+        "correct": [0, 3]
+    },
+        "type": "textWithImage",
+        "question": "Welche Eigenschaften beschreiben eine Gleichspannung ?",
+        "image": "Bilder Elektrotechnik 6/bild7.jpg",
+        "answers": ["Gleichbleibende Polarität", "Variable Frequenz", "Konstante Höhe", "Wechselnde Stromrichtung"],
+        "correct": [0, 2]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Welche Aussage trifft auf einen Drehstrommotor zu ?",
+        "image": "Bilder Elektrotechnik 6/bild10.jpg",
+        "answers": ["Wandelt mechanische in elektrische Energie um", "Wandelt elektrische in mechanische Energie um", "Erzeugt Wechselspannungen", "Erzeugt Gleichspannung"],
+        "correct": [1]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Welche Leistungsart steht bei einem Drehstrommotor auf dem Typenschild ?",
+        "image": "Bilder Elektrotechnik 6/bild11.jpg",
+        "answers": ["Die elektrische Leistung P", "Die mechanische Leistung P", "Die Wellenleistung P"],
+        "correct": [1, 2]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Welche Einheit gilt für die Frequenz f z.B. bei Wechselspannungen ?",
+        "image": "Bilder Querbeet/bild5.jpg",
+        "answers": ["Hertz", "Volt", "Ampere", "Ohm"],
+        "correct": [0]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Welche Aussagen treffen auf einen Drehstromgenerator zu ?",
+        "image": "Bilder Querbeet/bild5.jpg",
+        "answers": ["Wandelt mechanische in elektrische Energie um", "Wandelt elektrische in mechanische Energie um", "Erzeugt Wechselspannung", "Erzeugt Gleichspannung"],
+        "correct": [0, 2]
+    }
+],
+
+
+"Elektrotechnik 7":  [
+    {
+        type: "textWithImage",
+        question: "Wie viele Phasen hat ein typisches Drehstromsystem ?",
+        image: "Bilder Elektrotechnik 7/bild1.jpg",
+        answers: ["Eine", "Zwei", "Drei", "Vier"],
+        correct: [2]
+    },
+    {
+        type: "textWithImage",
+        question: "Es liegt ein 400 V-Netz vor. Wie hoch ist die Spannung zwischen allen Außenleitern (Phasen) zueinander ?",
+        image: "Bilder Elektrotechnik 7/bild6a.jpg",
+        answers: ["380 V", "230 V", "400 V", "220 V"],
+        correct: [2]
+    },
+    {
+        type: "textWithImage",
+        question: "Es liegt ein 400 V-Netz vor. Wie hoch ist die Spannung zwischen allen Außenleitern (Phasen) zu N ?",
+        image: "Bilder Elektrotechnik 7/bild4a.jpg",
+        answers: ["380 V", "230 V", "400 V", "220 V"],
+        correct: [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Es liegt ein 400 V-Netz vor. Wie hoch ist die Spannung zwischen allen Außenleitern (Phasen) zu PE ?",
+        image: "Bilder Elektrotechnik 7/bild5a.jpg",
+        answers: ["230 V", "400 V", "380 V", "220 V"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Welcher maximale Spannungswert gilt für Niederspannung im AC-Bereich ?",
+        image: "Bilder Querbeet/bild5.jpg",
+        answers: ["230 V", "400 V", "600 V", "1000 V"],
+        correct: [3]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Spannungswerte werden in einem Drehstromsystem typischerweise im Niederspannungsbereich verwendet ?",
+        image: "Bilder Querbeet/bild5.jpg",
+        answers: ["230 V", "400 V", "600 V", "1000 V"],
+        correct: [0, 1]
+    },
+    {
+        type: "textWithImage",
+        question: "Welcher maximale Spannungswert gilt für Niederspannung im DC-Bereich ?",
+        image: "Bilder Querbeet/bild5.jpg",
+        answers: ["800 V", "400 V", "600 V", "1,5 kV"],
+        correct: [3]
+    },
+    {
+        type: "textWithImage",
+        question: "Eine weitere Bezeichnung von Drehstrom ist umgangssprachlich Kraftstrom.",
+        image: "Bilder Elektrotechnik 7/bild2.jpg",
+        answers: ["Richtig", "Falsch"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Symbole deuten auf ein Drehstromsystem hin ?",
+        image: "Bilder Querbeet/bild5.jpg",
+        answers: ["3~", "Δ und Y", "||", "="],
+        correct: [0, 1]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Größen sind im Ohmschen Gesetz enthalten ?",
+        image: "Bilder Elektrotechnik 1/bild3.jpg",
+        answers: ["Spannung", "Stromstärke", "Widerstand", "Leistung"],
+        correct: [0, 1, 2]
+    },
+    {
+        type: "textWithImage",
+        question: "Was beschreibt der Widerstand in einem elektrischen Stromkreis ?",
+        image: "Bilder Elektrotechnik 1/bild3.jpg",
+        answers: [
+            "Die Hemmung des Stromflusses",
+            "Die Erhöhung der Spannung",
+            "Die Erhöhung des Stroms",
+            "Die Reduktion der Spannung"
+        ],
+        correct: [0]
+    }
+],
+
+"Elektrotechnik 8":  [
+    {
+        type: "textWithImage",
+        question: "Welche Formeln beschreiben die elektrische Leistung im Gleichstromkreis ?",
+        image: "Bilder Elektrotechnik 7/bild3.jpg",
+        answers: ["P = I * U", "P = U / I", "P = I² * R", "P = U² / R"],
+        correct: [0, 2, 3]
+    },
+    {
+        type: "textWithImage",
+        question: "Was passiert mit der Leistung, wenn die Spannung bei konstantem Strom verdoppelt wird ?",
+        image: "Bilder Elektrotechnik 7/bild3.jpg",
+        answers: ["Sie verdoppelt sich", "Sie halbiert sich", "Sie bleibt gleich", "Sie vervierfacht sich"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Was passiert mit dem Strom, wenn die Spannung bei konstantem Widerstand verdoppelt wird ?",
+        image: "Bilder Elektrotechnik 7/bild3.jpg",
+        answers: ["Er verdoppelt sich", "Er halbiert sich", "Er bleibt gleich", "Er verringert sich auf ein Viertel"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Auswirkung hat eine Erhöhung des Widerstandes bei konstanter Spannung auf die Leistung ?",
+        image: "Bilder Elektrotechnik 7/bild3.jpg",
+        answers: ["Die Leistung erhöht sich", "Die Leistung verringert sich", "Die Leistung bleibt gleich", "Die Leistung sinkt auf null"],
+        correct: [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Was passiert in einer Reihenschaltung, wenn ein Widerstand unterbrochen wird ?",
+        image: "Bilder Elektrotechnik 4/bild5.jpg",
+        answers: ["Der gesamte Stromkreis wird unterbrochen", "Der Stromkreis bleibt geschlossen", "Der Strom erhöht sich", "Der Widerstand reduziert sich"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Was passiert in einer Parallelschaltung, wenn ein Widerstand unterbrochen wird ?",
+        image: "Bilder Elektrotechnik 4/bild6.jpg",
+        answers: ["Der gesamte Stromkreis wird unterbrochen", "Die anderen Stromkreise 'laufen' weiter", "Der Gesamtstrom des Netzwerkes erhöht sich", "Der Gesamtwiderstand reduziert sich"],
+        correct: [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Auswirkung auf den Gesamtwiderstand hat es, wenn z.B. bei drei parallel liegenden Widerständen ein Widerstand unterbrochen wird ?",
+        image: "Bilder Elektrotechnik 4/bild6.jpg",
+        answers: ["Der Gesamtstrom der Schaltung wird kleiner", "Der Gesamtwiderstand sinkt", "Der Gesamtstrom der Schaltung wird größer", "Der Gesamtwiderstand erhöht sich"],
+        correct: [0, 3]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Zehnerpotenz entspricht dem Präfix 'Milli' ?",
+        image: "Bilder Querbeet/bild5.jpg",
+        answers: ["10^-3", "10^-6", "10^3", "10^6"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche Zehnerpotenz entspricht dem Präfix 'Kilo' ?",
+        image: "Bilder Querbeet/bild5.jpg",
+        answers: ["10^3", "10^6", "10^-3", "10^-6"],
+        correct: [0]
+    },
+    {
+        type: "textWithImage",
+        question: "Wähle die korrekte Umrechnung für 5000 Ω:",
+        image: "Bilder Querbeet/bild5.jpg",
+        answers: ["5 kΩ", "0,5 kΩ", "50 kΩ", "0,005 MΩ"],
+        correct: [0, 3]
+    },
+    {
+        type: "textWithImage",
+        question: "Welche der folgenden Werte sind korrekt umgerechnet ?",
+        image: "Bilder Querbeet/bild5.jpg",
+        answers: ["2 kΩ = 2000 Ω", "3 MΩ = 300 kΩ", "4 kΩ = 4.000.000 mΩ", "0,5 MΩ = 500 kΩ"],
+        correct: [0, 2, 3]
+    },
+    {
+        type: "textWithImage",
+        question: "0,02 kΩ sind dasselbe wie 20 Ω.",
+        image: "Bilder Querbeet/bild5.jpg",
+        answers: ["Richtig", "Falsch"],
+        correct: [0]
+    }
+],
+
+"Elektrotechnik 9":  [
+
+    {
+        type: "textWithImage",
+        question: "In einer Reihenschaltung führt der Ausfall eines Gerätes zum Ausfall aller anderen Geräte in der Schaltung.",
+        image: "Bilder Querbeet/bild5.jpg",
+        answers: ["Richtig", "Falsch"],
+        correct: [0]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Eine Parallelschaltung von Widerständen entspricht einer Vergrößerung des Querschnitts, durch den der Strom dann fließen kann. Daher sinkt der Gesamtwiderstand.",
+        "image": "Bilder Elektrotechnik 5/bild1.jpg",
+        "answers": ["Falsch", "Richtig"],
+        "correct": [1]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Eine Reihenschaltung von Teilwiderständen entspricht der Verlängerung der Wegstrecke (Länge). Daher verringert sich der Gesamtwiderstand.",
+        "image": "Bilder Elektrotechnik 5/bild1.jpg",
+        "answers": ["Richtig", "Falsch"],
+        "correct": [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Aluminium ist der Stand der Technik bei Leitungen und Kabeln in der Hausinstallation.",
+        image: "Bilder Querbeet/bild5.jpg",
+        answers: ["Richtig", "Falsch"],
+        correct: [1]
+    },
+    {
+        type: "textWithImage",
+        question: "Eine Kupfer-Aluminium-Legierung ist der Stand der Technik bei Leitungen und Kabeln in der Hausinstallation.",
+        image: "Bilder Querbeet/bild5.jpg",
+        answers: ["Richtig", "Falsch"],
+        correct: [1]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Wie können Widerstände/Verbraucher verschaltet werden ?",
+        "image": "Bilder Elektrotechnik 5/bild3.jpg",
+        "answers": ["In Reihe", "parallel", "In Kombination einer Reihen- und Parallelschaltung", "Nur in Reihe- oder parallel"],
+        "correct": [0, 1, 2]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Liegt ein RCD in der Hausverteilung vor und N und PE berühren sich, fliegt der FI",
+        "image": "Bilder Elektrotechnik 9/bild3.jpg",
+        "answers": ["Wenn noch ein Stromkreis im Haus aktiv ist, ja", "Stimmt nicht. Solange der Stromkreis unterbrochen ist, fliegt auch kein FI"],
+        "correct": [0]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Eine Reihenschaltung entspricht der Verlängerung der Wegstrecke (Länge). Daher steigt der Widerstand.",
+        "image": "Bilder Elektrotechnik 5/bild1.jpg",
+        "answers": ["Richtig", "Falsch"],
+        "correct": [0]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Eine Parallelschaltung von Widerständen entspricht einer Verringerung des Querschnitts, durch den der Strom dann fließen kann. Daher sinkt der Gesamtwiderstand.",
+        "image": "Bilder Elektrotechnik 5/bild1.jpg",
+        "answers": ["Falsch", "Richtig"],
+        "correct": [0]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Mit abnehmender Temperatur, sinkt der Leiterwiderstand bei Metallen wie Kupfer (Cu) oder Aluminium (Al).",
+        "image": "Bilder Elektrotechnik 5/bild2.jpg",
+        "answers": ["Falsch", "Richtig"],
+        "correct": [1]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Vervollständigen Sie den Satz: Volt, Watt und das Ohm, ohne uns ...",
+        "image": "Bilder Querbeet/bild1.jpg",
+        "answers": [".. gibt's kein Strom", "... bleibt der Olaf gern at home"],
+        "correct": [0]
+    }
+],
+
 "Stromgefahr 1": [
     {
         "type": "textWithImage",
@@ -56,13 +785,6 @@ const questions = {
         "image": "Bilder Querbeet/bild5.jpg",
         "answers": ["2", "4", "3", "5"],
         "correct": [2]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Schutzklasse 0 ist die am häufigsten vorkommende Schutzklasse",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Stimmt.", "Stimmt nicht. Außerdem nicht mehr zulässig in Deutschland"],
-        "correct": [1]
     },
     {
         "type": "textWithImage",
@@ -203,13 +925,6 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Was bedeutet die Abkürzung LS-Schalter ?",
-        "image": "Bilder Schutzmaßnahmen 1/bild1.jpg",
-        "answers": ["Leitungssicherung", "Leistungsschalter", "Leitungsschutz-Schalter", "Lasersicherung"],
-        "correct": [2]
-    },
-    {
-        "type": "textWithImage",
         "question": "Ab welcher Höhe löst ein LS-Schalter vom Typ B bei Kurzschluss aus ?",
         "image": "Bilder Schutzmaßnahmen 1/bild2.jpg",
         "answers": ["Beim 3-fachen Nennstrom der Sicherung", "Beim 5-fachen Nennstrom der Sicherung", "Beim 7-fachen Nennstrom der Sicherung", "Beim 10-fachen Nennstrom der Sicherung"],
@@ -221,13 +936,6 @@ const questions = {
         "image": "Bilder Querbeet/bild4.jpg",
         "answers": ["Es liegt ein Kurzschluss vor", "Der Stromkreis ist Überlastet und der thermische Leitungsschutz löst aus", "Der Wasserkocher hat einen Kurzschluss"],
         "correct": [1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Schützt ein Leitungsschutzschalter vor Überlast und Kurzschluss ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Ja", "Nein"],
-        "correct": [0]
     },
     {
         "type": "textWithImage",
@@ -291,13 +999,6 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Funktioniert der FI auch eindeutig bei 'Klassischer Nullung' ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Ja", "Nein"],
-        "correct": [1]
-    },
-    {
-        "type": "textWithImage",
         "question": "Welcher Strom fließt betriebsmäßig über den PEN-Leiter ?",
         "image": "Bilder Querbeet/bild5.jpg",
         "answers": ["Der Rückstrom", "Rück- als auch Fehlerstrom", "Fehlerstrom"],
@@ -321,27 +1022,6 @@ const questions = {
             "Ist in Neuinstallationen Pflicht"
         ],
         "correct": [0, 2, 3]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Ein Fehlerstrom-Schutzschalter (RCD) erkennt Kurzschlüsse.",
-        "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
-        "answers": ["Ja", "Nein"],
-        "correct": [1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Ein Fehlerstrom-Schutzschalter (RCD) erkennt Erdschlüsse.",
-        "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
-        "answers": ["Ja", "Nein"],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Ein Fehlerstrom-Schutzschalter (RCD) bietet Schutz vor Kurzschluss.",
-        "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
-        "answers": ["Falsch", "Richtig"],
-        "correct": [0]
     },
     {
         "type": "textWithImage",
@@ -396,13 +1076,6 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Was charakterisiert Schutzklasse 3 ?",
-        "image": "Bilder Schutzmaßnahmen 3/bild3.jpg",
-        "answers": ["Verwendung von Metallschirmen", "Maximal 50 V AC oder 120 V DC", "Gehäuse aus Kunststoff", "Verstärkte Isolierung"],
-        "correct": [1]
-    },
-    {
-        "type": "textWithImage",
         "question": "Welche Auswahlmöglichkeit ist ein typisches Beispiel für Schutzklasse 1 ?",
         "image": "Bilder Querbeet/bild5.jpg",
         "answers": ["Gehäuse einer Handbohrmaschine", "Kunststoffabdeckung einer Steckdose", "Metallschirm einer Lampe", "Gehäuse eines Drehstrommotors"],
@@ -431,13 +1104,6 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Welche Schutzklasse gilt für den Radiator ?",
-        "image": "Bilder Schutzmaßnahmen 2/bild6.jpg",
-        "answers": ["Schutzklasse 1", "Schutzklasse 2", "Schutzklasse 3", "Schutzklasse 4"],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
         "question": "Welche Beispiele gehören zur Schutzklasse 1 ?",
         "image": "Bilder Querbeet/bild5.jpg",
         "answers": ["Metallschirm einer Lampe", "Gehäuse eines Drehstrommotors", "Elektroherd", "Abzweigdose"],
@@ -452,25 +1118,11 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Sind 'Kabeltrommeln' (Leitungsroller) mit metallischen Rollen noch erlaubt ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Nein", "Ja"],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
         "question": "In Schutzklasse 1 muss der Schutzleiter (PE) angeschlossen werden ?",
         "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
         "answers": ["Ja", "Nein"],
         "correct": [0]
     },
-    {
-        "type": "textWithImage",
-        "question": "Bei Anschlussleitungen wie z.B. H07RN kann ich denn PE abkneifen, wenn eine Handbohrmaschine vorliegt",
-        "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
-        "answers": ["Ja", "Nein"],
-        "correct": [1]
-    }
 ],
 
 "Schutzmaßnahmen 4": [
@@ -494,13 +1146,6 @@ const questions = {
         "image": "Bilder Querbeet/bild5.jpg",
         "answers": ["Schutz gegen Überlast", "Schutz gegen Spannungsschwankungen", "Schutz gegen direktes Berühren", "Schutz gegen elektromagnetische Felder"],
         "correct": [2]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Was wird als Fehlerschutz bezeichnet ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Schutz gegen Überspannung", "Schutz gegen indirektes Berühren", "Schutz gegen Kurzschluss", "Schutz gegen Überlast"],
-        "correct": [1]
     },
     {
         "type": "textWithImage",
@@ -532,32 +1177,11 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Welche der folgenden Maßnahmen gehören zum Fehlerschutz ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Sicherungen", "Nichtleitende Umhüllungen", "Verstärkte Isolierung", "Schutz durch Abstand"],
-        "correct": [0, 2]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Basisschutz ist der Schutz gegen direktes Berühren",
-        "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
-        "answers": ["Ja", "Nein"],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
         "question": "Der Metallrahmen einer SchuKo-Steckdose steht immer unter Spannung",
         "image": "Bilder Querbeet/bild5.jpg",
         "answers": ["Richtig", "Falsch"],
         "correct": [1]
     },
-    {
-        "type": "textWithImage",
-        "question": "Fehlerschutz ist der Schutz gegen indirektes Berühren",
-        "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
-        "answers": ["Ja", "Nein"],
-        "correct": [0]
-    }
 ],
 
 
@@ -575,20 +1199,6 @@ const questions = {
         "image": "Bilder Schutzmaßnahmen 5/bild4a.jpg",
         "answers": ["IT-Netz", "TT-Netz", "TNC-Netz"],
         "correct": [2]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Verstärkte Isolierung ist ein Beispiel für den Fehlerschutz.",
-        "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
-        "answers": ["Richtig", "Falsch"],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Fehlerstromschutzschalter sind für den Fehlerschutz im Fehlerfall zuständig.",
-        "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
-        "answers": ["Richtig", "Falsch"],
-        "correct": [0]
     },
     {
         "type": "textWithImage",
@@ -659,18 +1269,6 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Wofür steht die Abkürzung TT-Netz ?",
-        "image": "Bilder Schutzmaßnahmen 6/bild1.jpg",
-        "answers": [
-            "Terre-Terre Netz",
-            "Tension-Tension Netz",
-            "Transformer-Transformer Netz",
-            "Telecommunication-Television Netz"
-        ],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
         "question": "Ist klassische Nullung (TN-C) in Neuinstallationen noch erlaubt ?",
         "image": "Bilder Schutzmaßnahmen 5/bild3a.jpg",
         "answers": ["Ja", "Nein"],
@@ -682,34 +1280,6 @@ const questions = {
         "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
         "answers": ["Ja", "Nein"],
         "correct": [1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Wofür steht die Abkürzung IT-Netz ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Insulated-Terre Netz", "Isolé-Terre Netz", "Independent-Terre Netz", "Internal-Tension Netz"],
-        "correct": [1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Warum wird der PEN-Leiter in PE und N getrennt ?",
-        "image": "Bilder Schutzmaßnahmen 6/bild2.jpg",
-        "answers": ["Um die Verwendung von FI-Schutzschaltern (RCDs) zu ermöglichen.", "Um den Stromfluss zu erhöhen.", "Um Platz in der Verteilerdose zu sparen.", "Um die Leitungskosten zu reduzieren."],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Wie viele Fehler müssen eintreten, damit die Schutzeinrichtung im IT-Netz auslöst ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Mindestens ein Fehler", "Mindestens zwei Fehler"],
-        "correct": [1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Wo kommt das IT-Netz zum Einsatz ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["In OP's von Krankenhäusern", "In der Petro-Chemie", "In Mehrfamilienhäusern"],
-        "correct": [0, 1]
     },
     {
         type: "textWithImage",
@@ -766,13 +1336,6 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Welche VDE Norm thematisiert das Prüfen ortsveränderlicher elektrischer Arbeitsmittel ?.",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["DIN VDE 0701-0702", "DIN VDE 0701", "DIN VDE 0702"],
-        "correct": [1, 2]
-    },
-    {
-        "type": "textWithImage",
         "question": "Ein Isolationswiderstand von weniger als 1 MΩ ist bei elektrischen Arbeitsmitteln zulässig.",
         "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
         "answers": ["Richtig", "Falsch"],
@@ -806,27 +1369,6 @@ const questions = {
         "answers": ["Sichtprüfung", "Isolationswiderstandsmessung", "Schutzleiterwiderstandsmessung", "Funktionsprüfung"],
         "correct": [0, 1, 3]
     },
-    {
-        "type": "textWithImage",
-        "question": "Welche Merkmale zeichnen Geräte der Schutzklasse 3 aus ?",
-        "image": "Bilder Prüfung/bild3.jpg",
-        "answers": ["Betrieb mit Kleinspannung (SELV)", "Benötigt einen Schutzleiter", "Besitzt einen Sicherheitstransformator", "Nutzung in feuchten Umgebungen ohne Gefahr"],
-        "correct": [0, 2]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Betriebsmittel der Schutzklasse 3 dürfen nur mit Schutzkleinspannung betrieben werden.",
-        "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
-        "answers": ["Richtig", "Falsch"],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
-        "question": "SELV sorgt dafür, dass auch bei vorhersehbaren Fehlerzuständen keine gefährliche Berührungsspannung auftreten kann.",
-        "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
-        "answers": ["Richtig", "Falsch"],
-        "correct": [0]
-    }
 ],
 
 
@@ -868,38 +1410,10 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Welche Schritte sind gemäß DIN VDE 0105-100 vor der Durchführung von Arbeiten unter Spannung notwendig ?",
-        "image": "Bilder Unfallverhütung/bild4.jpg",
-        "answers": ["Erstellen einer Gefährdungsbeurteilung", "Überprüfen der PSA", "Informieren der zuständigen Aufsichtsbehörde", "Prüfung des Arbeitsbereichs und Geräte auf Sicherheit"],
-        "correct": [0, 1, 3]
-    },
-    {
-        "type": "textWithImage",
-        "question": "\"Arbeiten unter Spannung\" sind nur bei Hochspannungsanlagen erforderlich.",
-        "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
-        "answers": ["Richtig", "Falsch"],
-        "correct": [1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Darf jede Elektrofachkraft Arbeiten unter Spannung ausführen ?",
-        "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
-        "answers": ["Ja", "Nein"],
-        "correct": [1]
-    },
-    {
-        "type": "textWithImage",
         "question": "Welche Maßnahme von Unternehmerseite klärt eigentlich den oft unklaren Zustand, ob es sich um eine Arbeit unter Spannung handelt oder nicht ?",
         "image": "Bilder Querbeet/bild5.jpg",
         "answers": ["Eine saubere Gefährdungsbeurteilung", "Fachlicher Rat, auch von außerhalb", "Chat GPT", "Google"],
         "correct": [0, 1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Müssen Unfälle, egal welcher Art, dokumentiert werden ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Ja", "Nein"],
-        "correct": [0]
     },
     {
         "type": "textWithImage",
@@ -976,7 +1490,7 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Was sind vermutlich die treibenden Fehler, dass Ereignisse wie Stromunfälle überhaupt geschejen  ?",
+        "question": "Was sind vermutlich die treibenden Fehler, dass Ereignisse wie Stromunfälle überhaupt geschehen  ?",
         "image": "Bilder Querbeet/bild5.jpg",
         "answers": ["Mangelnde Unterweisung", "Fehlende Praxiskenntnisse", "Zeitdruck", "Gleichgültigkeit"],
         "correct": [0, 1, 2]
@@ -1068,13 +1582,6 @@ const questions = {
         "image": "Bilder Verantwortung/bild3.jpg",
         "answers": ["Alle elektrotechnisch unterwiesenen Personen", "Nur neue Mitarbeiter", "Nur Führungskräfte", "Alle Mitarbeiter mit Zugang zu elektrischen Anlagen"],
         "correct": [0, 3]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Jede Elektrofachkraft darf eigenständig Sicherheitsanweisungen ändern",
-        "image": "Bilder Schutzmaßnahmen 2/bild7.jpg",
-        "answers": ["Richtig", "Falsch"],
-        "correct": [1]
     },
     {
         "type": "textWithImage",
@@ -1214,7 +1721,6 @@ const questions = {
         "correct": [0]
     }
 ],
-
 
 
 "Messtechnik": [
@@ -1538,24 +2044,17 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Welche Schutzklassen gelten aktuell für elektrische Betriebsmittel ?",
-        "image": "Bilder Querbeet/bild4.jpg",
-        "answers": ["Schutzklassen 0, 1 und 2", "Schutzklassen A, B und C", "Schutzklassen 1, 2 und 3", "Schutzklassen 1, 2 und 4"],
-        "correct": [2]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Welche Schutzklasse liegt grundsätzlich bei Betriebsmittel mit Schukosteckern vor ?",
-        "image": "Bilder Betriebsmittel/bild8.jpg",
-        "answers": ["Schutzklasse 2", "Schutzklasse 0", "Schutzklasse 3", "Schutzklasse 1"],
-        "correct": [3]
-    },
-    {
-        "type": "textWithImage",
         "question": "Was bedeutet das 'J' in der Bezeichnung: NYM-J 3x1,5<sup>2</sup> ?",
         "image": "Bilder Betriebsmittel/bild9.jpg",
         "answers": ["Es liegt ein Schutzleiter vor", "Es liegt kein PE vor", "Es liegt kein Schutzleiter vor", "Es liegt ein PE vor"],
         "correct": [0, 3]
+    },
+    {
+        "type": "textWithImage",
+        "question": "Was bedeutet das 'O' in der Bezeichnung: NYM-O 3x2,5<sup>2</sup> ?",
+        "image": "Bilder Betriebsmittel/bild9.jpg",
+        "answers": ["Es liegt ein Schutzleiter vor", "Es liegt kein PE vor", "Es liegt kein Schutzleiter vor", "Es liegt ein PE vor"],
+        "correct": [1]
     },
     {
         "type": "textWithImage",
@@ -1566,24 +2065,10 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Ist das NYM ein Kabel oder eine Leitung ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Eine Leitung", "Ein Kabel", "weder noch", "Wenn es im Außenbereich liegt, ein Kabel, sonst eine Leitung"],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
         "question": "Was ist ein Schütz ?",
         "image": "Bilder Betriebsmittel/bild10.jpg",
         "answers": ["Eine Schutzeinrichtung", "Ein Transformator", "Ein elektromechanischer Schalter"],
         "correct": [2]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Ist das NYY eine Leitung oder ein Kabel ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Eine Leitung", "Ein Kabel", "weder noch", "Wenn es im Innenbereich liegt, ein Kabel, sonst eine Leitung"],
-        "correct": [1]
     },
     {
         "type": "textWithImage",
@@ -1608,13 +2093,6 @@ const questions = {
         "image": "Bilder Betriebsmittel/bild11.jpg",
         "answers": ["ON", "NO", "OFF", "NC"],
         "correct": [1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Wie lautet die englische Bezeichnung für einen Wechslerkontakt ?",
-        "image": "Bilder Betriebsmittel/bild31.jpg",
-        "answers": ["ON", "NO", "SPDT", "NC"],
-        "correct": [2]
     },
     {
         "type": "textWithImage",
@@ -1741,13 +2219,6 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Welche Aussage zum Drehstromgenerator ist richtig ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Der Generator wandelt mechanische- in elektrische Arbeit um", "Der Generator wandelt mechanische- in chemische Arbeit um", "Der Generator wandelt mechanische- in elektrische Arbeit um"],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
         "question": "Ist dieser Motor in Dreieck- oder Stern geschaltet ?",
         "image": "Bilder Betriebsmittel/bild21.jpg",
         "answers": ["In Stern", "In Dreieck"],
@@ -1817,13 +2288,6 @@ const questions = {
         "question": "Wie nennt man das schaltungstechnische Konzept der beiden Taster S1 und S2 ?",
         "image": "Bilder Betriebsmittel/bild24.jpg",
         "answers": ["Ausschaltverzögerung", "Schützverriegelung", "Tasterverriegelung"],
-        "correct": [2]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Was passiert, wenn man ein DC-Schütz versehentlich an AC betreibt ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Das Schütz würde nicht anziehen", "Das Schütz 'flattert'", "Die Spule erwärmt sich und das Schütz geht kaputt"],
         "correct": [2]
     },
     {
@@ -1984,13 +2448,6 @@ const questions = {
     },
     {
         "type": "textWithImage",
-        "question": "Es liegt ein Ausschnitt einer Unterverteilung (UV) eines Gewerbebetriebes vor. Macht der C16 A-Sicherungsautomat Sinn ?",
-        "image": "Bilder Schaltungstechnik/bild13.jpg",
-        "answers": ["Nein, laut VDE 0100 sind nur B-Automaten zulässig", "Nein, dem Querschnitt nach zu urteilen, muss ein C20 A-Automat installiert werden", "Ja, durchaus, da induktive- oder kapazitive Lasten höhere Einschaltströme besitzen, bei der ein B-Automat auslösen könnte"],
-        "correct": [2]
-    },
-    {
-        "type": "textWithImage",
         "question": "Um welche Leiterart handelt es sich im folgendem Bild ?",
         "image": "Bilder Schaltungstechnik/bild14.jpg",
         "answers": ["PEN-Leiter", "PE-Leiter", "PELV-Leiter", "N-Leiter"],
@@ -2024,216 +2481,6 @@ const questions = {
         "answers": ["Selbstprogrammierbare Steuerung", "Verbindungsprogrammierbare Steuerung", "Speicherprogrammierbare Steuerung"],
         "correct": [2]
     },
-    {
-        "type": "textWithImage",
-        "question": "Wie bezeichnet man Eingänge allgemein noch ?",
-        "image": "Bilder Schaltungstechnik/bild17.jpg",
-        "answers": ["Donatoren", "Sensoren", "Akzeptoren"],
-        "correct": [1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Wie bezeichnet man Ausgänge allgemein noch ?",
-        "image": "Bilder Schaltungstechnik/bild17.jpg",
-        "answers": ["Aktoren", "Resonatoren", "Transistoren"],
-        "correct": [0]
-    },
-
-],
-
-"Steuerungstechnik 1": [
-
-    {
-        "type": "textWithImage",
-        "question": "Wie werden Schutzeinrichtungen wie LS-Schalter, Stopp-Taster, NOT-AUS-Einrichtungen usw. verdrahtet/programmiert ?",
-        "image": "Bilder Steuerungstechnik/bild1.jpg",
-        "answers": ["In Reihe zueinander", "Parallel zueinander"],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Wie nennt man folgende Grundfunktion in der SPS ?",
-        "image": "Bilder Steuerungstechnik/bild2.jpg",
-        "answers": ["Negator", "UND-Gatter", "ODER-Gatter"],
-        "correct": [1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Welche Struktur entspricht so einer ' &-Funktion ' ?",
-        "image": "Bilder Steuerungstechnik/bild3.jpg",
-        "answers": ["Einer gemischten Verschaltung", "Einer Parallelschaltung", "Einer Reihenschaltung"],
-        "correct": [2]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Wie nennt man folgende Grundfunktion in der SPS ?",
-        "image": "Bilder Steuerungstechnik/bild4.jpg",
-        "answers": ["Negator", "UND-Gatter", "ODER-Gatter"],
-        "correct": [2]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Welche Struktur entspricht so einer '>=1-Funktion' ?",
-        "image": "Bilder Steuerungstechnik/bild5.jpg",
-        "answers": ["Einer gemischten Verschaltung", "Einer Parallelschaltung", "Einer Reihenschaltung"],
-        "correct": [1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Wenn bereits eine einzige Bedingung in einer ' >=1-Funktion ' nicht erfüllt ist, dann ...",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["geht gar nix mehr", "läuft die Sache durchaus weiter"],
-        "correct": [1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Wenn bereits eine einzige Bedingung in einer '&-Funktion' nicht erfüllt ist, dann ...",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["geht gar nix mehr", "läuft die Sache durchaus weiter"],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Folgende Abbildung zeigt einen 'MCB' (Motorschutzschalter). Was charakterisiert die gelbe Markierung ?",
-        "image": "Bilder Steuerungstechnik/bild6.jpg",
-        "answers": ["Den Kurzschlussschutz mittels Spule", "Den Überlastfall mittels Bi-Metall-Kontakten"],
-        "correct": [1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Folgende Abbildung zeigt einen 'MCB' (Motorschutzschalter). Was charakterisiert die grüne Markierung ?",
-        "image": "Bilder Steuerungstechnik/bild7.jpg",
-        "answers": ["Den Kurzschlussschutz mittels Spule", "Den Überlastfall mittels Bi-Metall-Kontakten"],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Welche Aussage bezüglich des 'MCB's' ist falsch ?",
-        "image": "Bilder Steuerungstechnik/bild8.jpg",
-        "answers": ["Es reicht bereits eine Fehlerart aus, und der MCB löst aus", "Es müssen beide Fehlerarten eintreten, damit der MCB auslöst"],
-        "correct": [1]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Welche Aussage zu den Schutzfunktionen eines MCB's ist richtig ?",
-        "image": "Bilder Querbeet/bild5.jpg",
-        "answers": ["Die beiden Schutzfunktionen liegen im Betriebsmittel in Reihe vor", "Die beiden Schutzfunktionen liegen im Betriebsmittel parallel vor"],
-        "correct": [0]
-    },
-    {
-        "type": "textWithImage",
-        "question": "Welcher Fehler liegt hier vor ?",
-        "image": "Bilder Steuerungstechnik/bild9.jpg",
-        "answers": ["Der Motor läuft in beiden Fällen nur links herum", "Beim Einschalten gibt es einen Phasenschluss", "Der Motor läuft in beiden Fällen nur rechts herum"],
-        "correct": [2]
-    },
-
-],
-
-"Elektronik": [
-
-  {
-    type: "textWithImage",
-    question: "Wie heißt dieses elektronische Bauteil ?",
-    image: "Bilder Elektronik/bild1.jpg",
-    answers: ["Kondensator", "Widerstand", "Diode", "Spule"],
-    correct: [2]
-  },
-  {
-    type: "textWithImage",
-    question: "Welches Bauteil wird hier dargestellt?",
-     image: "Bilder Elektronik/bild2.jpg",
-    answers: ["Spule", "Widerstand", "Kondensator", "Diode"],
-    correct: [0]
-  },
-  {
-    type: "textWithImage",
-    question: "Welche Funktion hat dieses Bauteil in der Schaltung ?",
-    image: "Bilder Elektronik/bild3.jpg",
-    answers: [
-      "Es reduziert die Spannung für die LED",
-      "Es verstärkt das Signal",
-      "Es speichert elektrische Energie",
-      "Es blockiert Gleichspannung"
-    ],
-    correct: [0]
-  },
-  {
-    type: "textWithImage",
-    question: "Wie wird ein Schaltkreis mit einer Diode beeinflusst ?",
-    image: "Bilder Elektronik/bild4.jpg",
-    answers: [
-      "Der Strom fließt in beide Richtungen",
-      "Der Strom wird verstärkt",
-      "Der Strom kann nur in eine Richtung fließen",
-      "Die Spannung wird erhöht"
-    ],
-    correct: [2]
-  },
-  {
-    type: "textWithImage",
-    question: "Welches Bauteil ist hier zu sehen ?",
-    image: "Bilder Elektronik/bild5.jpg",
-    answers: ["Widerstand", "ELKO", "Spule", "Diode"],
-    correct: [1]
-  },
-  {
-    type: "textWithImage",
-    question: "Wie verhält sich ein Kondensator im Gleichstromkreis im Einschaltmoment ?",
-    image: "Bilder Querbeet/bild5.jpg",
-    answers: ["Er wirkt wie ein Kurzschluss", "Er wirkt wie eine Unterbrechnung", "Er verhält sich wie ein Widerstand R"],
-    correct: [0]
-  },
-  {
-    type: "textWithImage",
-    question: "Wie verhält sich ein Kondensator im Gleichstromkreis im Ausschaltmoment ?",
-    image: "Bilder Querbeet/bild5.jpg",
-    answers: ["Er wirkt wie eine Unterbrechnung", "Er wirkt wie ein Kurzschluss", "Er verhält sich wie ein Widerstand R"],
-    correct: [0]
-  },
-  {
-    type: "textWithImage",
-    question: "Was passiert, wenn ein Leuchtmittel (oder LED) in Reihe zu einem Kondensator im DC-Kreis geschaltet wird ?",
-    image: "Bilder Querbeet/bild5.jpg",
-    answers: ["Nichts. Die LED bleibt dunkel", "Die LED ist zunächst dunkel und beginnt allmählich zu leuchten", "Die LED hat zunächst maximale Helligkeit und wird allmählich dunkel"],
-    correct: [2]
-  },
-  {
-    type: "textWithImage",
-    question: "Was passiert, wenn ein Leuchtmittel (oder LED) parallel zu einem Kondensator im DC-Kreis geschaltet wird ?",
-    image: "Bilder Querbeet/bild5.jpg",
-    answers: ["Nichts. Die LED bleibt hell", "Die LED ist zunächst dunkel und beginnt allmählich zu leuchten", "Die LED hat zunächst maximale Helligkeit und wird allmählich dunkel"],
-    correct: [1]
-  },
- {
-    type: "textWithImage",
-    question: "Wie verhält sich eine Spule im Gleichstromkreis im Einschaltmoment ?",
-    image: "Bilder Querbeet/bild5.jpg",
-    answers: ["Sie wirkt wie ein Kurzschluss", "Sie wirkt wie eine Unterbrechnung", "Er verhält sich wie ein Kondensator C"],
-    correct: [1]
-  },
- {
-    type: "textWithImage",
-    question: "Wie verhält sich eine Spule im Gleichstromkreis im Ausschaltmoment ?",
-    image: "Bilder Querbeet/bild5.jpg",
-    answers: ["Sie wirkt wie ein Kurzschluss", "Sie wirkt wie eine Unterbrechnung", "Er verhält sich wie ein Kondensator C"],
-    correct: [0]
-  },
-  {
-    type: "textWithImage",
-    question: "Was passiert, wenn ein Leuchtmittel (oder LED) in Reihe zu einer Spule im DC-Kreis geschaltet wird ?",
-    image: "Bilder Querbeet/bild5.jpg",
-    answers: ["Nichts. Die LED bleibt dunkel", "Die LED ist zunächst dunkel und beginnt allmählich zu leuchten", "Die LED hat zunächst maximale Helligkeit und wird allmählich dunkel"],
-    correct: [1]
-  },
-  {
-    type: "textWithImage",
-    question: "Was passiert, wenn ein Leuchtmittel (oder LED) parallel zu Spule im DC-Kreis geschaltet wird ?",
-    image: "Bilder Querbeet/bild5.jpg",
-    answers: ["Nichts. Die LED bleibt hell", "Die LED ist zunächst dunkel und beginnt allmählich zu leuchten", "Die LED hat zunächst maximale Helligkeit und wird allmählich dunkel"],
-    correct: [2]
-  },
-
 
 ]
 
